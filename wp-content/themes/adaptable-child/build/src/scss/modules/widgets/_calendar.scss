@@ -1,0 +1,45 @@
+#wp-calendar {
+    border-collapse: collapse;
+    border         : 1px solid $primary-light-gray;
+    width          : 100%;
+    border-top     : none;
+
+    td,
+    th {
+        text-align: center;
+    }
+
+    td#today {
+        background: $primary-light-gray;
+    }
+
+    caption {
+        padding    : 0;
+        line-height: 39px;
+    }
+
+    tfoot,
+    thead {
+        line-height: 33px;
+        background : $primary-light-gray;
+    }
+
+    tbody {
+        line-height: 33px;
+    }
+
+    #next {
+        padding   : 0 10px;
+        background: $primary-light-gray;
+    }
+
+    #prev {
+        padding   : 0 10px;
+        background: $primary-light-gray;
+        text-align: left;
+    }
+
+    #next {
+        text-align: right;
+    }
+}

@@ -1,0 +1,30 @@
+#listing-add-form-one,
+#listing-add-form-three,
+.stepContent__billing {
+    label {
+        @include screen-reader-text;
+    }
+}
+
+
+.listing-step-tabs {
+    .btn-default.input-error {
+        border-color: $primary-red;
+    }
+}
+
+.termsAndConditions {
+    label {
+        font-size: 0.777777778em;
+        font-weight: 400;
+        margin: 0.5rem 0 1rem 0;
+        &.input-error {
+            border: 1px solid $primary-red;
+            padding: 1em;
+        }
+    }
+    a {
+        text-decoration: underline;
+        color: lighten($primary-medium-gray, 20);
+    }
+}

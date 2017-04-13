@@ -1,0 +1,16 @@
+// custom one
+.custom-sidebar {
+    .widgettitle {
+        font-weight: normal;
+        font-family: $base-font-family;
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.875rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 0;
+    }
+    input[type="submit"] {
+        @extend %button--alternate;
+    }
+}

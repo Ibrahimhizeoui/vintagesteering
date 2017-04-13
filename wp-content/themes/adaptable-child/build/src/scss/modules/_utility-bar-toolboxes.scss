@@ -1,0 +1,216 @@
+.tools-bar {
+    float: left;
+    li:hover > .tool-box {
+        display: block;
+    }
+}
+
+.tool-box {
+    display      : none;
+    width        : 350px;
+    z-index      : 4444;
+    position     : absolute;
+    left         : 0;
+    top          : 100%;
+    border       : 1px solid $primary-light-gray;
+    background   : $primary-white;
+    z-index      : 11;
+    border-radius: 0 0 3px 3px;
+    box-shadow   : 0 6px 12px $black--op70;
+
+    &:before {
+        position           : absolute;
+        left               : 21px;
+        top                : auto;
+        margin             : -14px 0 0 -10px;
+        width              : 0;
+        height             : 0;
+        border             : solid transparent;
+        border-width       : 8px;
+        border-bottom-color: $primary-white;
+        content            : " ";
+        pointer-events     : none;
+    }
+
+    h5 {
+        font-weight  : 700;
+        font-size    : 15px;
+        margin-bottom: 0;
+    }
+
+    p {
+        line-height: 1.4em;
+    }
+
+    .tool-box-head {
+        border-bottom: 1px solid $primary-light-gray;
+        padding      : 12px 15px;
+
+        a {
+            color: $primary-medium-gray;
+            &:hover {
+                color: $primary-medium-gray;
+            }
+        }
+    }
+
+    .tool-box-in {
+        padding  : 0 15px;
+        font-size: 13px;
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .tool-box-foot {
+        @include cf;
+        border-top: 1px solid $primary-light-gray;
+        padding   : 12px 15px;
+        background: $primary-light-gray;
+        .compare-in-description {
+            text-align: center;
+            font-size: 0.777777778em;
+            color: $primary-medium-gray;
+            margin-bottom: 10px;
+        }
+        .compare-in-box,
+        .compare-viewed-box {
+            text-align: center;
+        }
+    }
+
+    .tool-signin {
+        margin-right: 15px;
+        font-size   : 13px;
+    }
+
+    .tool-view-listing .textb {
+        width: 60%;
+    }
+
+    .tool-search-listing {
+        .link a {
+            text-decoration: underline;
+        }
+    }
+
+    .tool-car-listing {
+        margin         : 0 0 10px;
+        list-style-type: none;
+
+        li {
+            @include cf;
+            width         : 100%;
+            display       : block;
+            margin        : 10px 0 0;
+            border-bottom : 1px solid $primary-light-gray;
+            padding-bottom: 10px;
+            height: 80px;
+
+            &:last-child {
+                border-bottom : 0;
+                padding-bottom: 0;
+            }
+        }
+
+        .link {
+            float: left;
+            width: 94%;
+        }
+
+        .checkb {
+            float      : left;
+            width      : 7%;
+            line-height: 80px;
+
+            input[type="checkbox"] {
+                margin-top: 0;
+            }
+        }
+
+        .imageb {
+            float: left;
+            width: 25%;
+            margin-right: 4%;
+            height: 80px;
+            background-color: $primary-cream;
+            line-height: 70px;
+            height: 100%;
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+            }
+
+            img {
+                border: 1px solid $primary-light-gray;
+                max-height: 100%;
+                display: inline-block;
+
+            }
+        }
+        .textb {
+            width      : 58%;
+            float      : left;
+            line-height: 15px;
+            font-size  : 13px;
+            a {
+                font-weight: 700;
+                color      : $primary-light-gray;
+            }
+
+            .price {
+                display   : block;
+                margin-top: 7px;
+                color     : $primary-medium-gray;
+            }
+        }
+        .delete, .save {
+            width     : 6%;
+            float     : left;
+            text-align: right;
+            line-height: 80px;
+            a {
+                color: $primary-medium-gray;
+                &:hover {
+                    text-decoration: none;
+                    color: $primary-black;
+                }
+            }
+            i {
+                font-size: 1.222222222em;
+            }
+        }
+    }
+
+    // saved vehicles
+    .saved-cars-box {
+        li {
+
+        }
+    }
+
+    .tool-search-listing {
+        list-style: none;
+        li {
+            @include cf;
+
+            .link {
+                float: left;
+                a {
+                    color: $primary-green;
+                }
+            }
+
+            .delete-box-search, .delete {
+                float: right;
+                a {
+                    color: $primary-black;
+
+                }
+            }
+        }
+    }
+}

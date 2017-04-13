@@ -1,0 +1,102 @@
+.dealer-search-map {
+    position: relative;
+}
+
+.dealer-search-head {
+    position: absolute;
+    z-index: 99;
+    height: 120px;
+    top: 50%;
+    left: 0;
+    width: 10%;
+    background: $white--op70;
+    margin-top: -60px;
+}
+
+.dealer-search-field {
+    width : 30%;
+    margin: 50px auto 0;
+    .form-control {
+        font-size : 20px;
+        text-align: center;
+    }
+}
+
+.dealers-search-result {
+    margin-top: 30px;
+}
+
+.dealer-block-inner {
+    padding            : 10px;
+    background         : $primary-white;
+    background-repeat  : no-repeat;
+    background-position: center center;
+    background-size    : cover;
+}
+
+.dealer-block-cont {
+    background: $primary-white;
+    padding   : 15px;
+}
+
+.image-dealer-profile {
+    position: relative;
+}
+
+.dealer-block-info {
+    @include cf;
+    position      : relative;
+    padding-bottom: 15px;
+    min-height    : 102px;
+    h5 {
+        margin-bottom: 5px;
+        line-height  : 16px;
+        font-weight  : bold;
+        font-size    : 15px;
+        padding-left : 70px;
+        margin-top   : 7px;
+        a {
+            color: $primary-medium-gray;
+        }
+    }
+    .dealer-avatar {
+        background  : $primary-light-gray;
+        float       : left;
+        width       : 60px;
+        height      : 60px;
+        border      : 1px solid $primary-light-gray;
+        padding     : 5px;
+        margin-right: 10px;
+    }
+
+    .meta-data {
+        padding-left: 70px;
+    }
+}
+
+.dealer-block-text {
+    border-top    : 1px solid $primary-light-gray;
+    border-bottom : 1px solid $primary-light-gray;
+    padding-top   : 22px;
+    padding-bottom: 22px;
+
+    p {
+        line-height  : 18px;
+        margin-bottom: 0;
+        color        : $primary-light-gray;
+        font-size    : 13px;
+    }
+}
+
+.dealer-block {
+    .btn {
+        margin       : 15px auto     0;
+        border-radius: 30px;
+   }
+}
+
+@media only screen and (max-width: 992px) {
+    .dealer-search-field {
+        width: 80%;
+    }
+}

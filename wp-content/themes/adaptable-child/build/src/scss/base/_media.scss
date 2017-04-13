@@ -1,0 +1,17 @@
+figure {
+  margin: 0;
+}
+
+a {
+    img {
+      border: none;
+    }
+    > img {
+      vertical-align: middle;
+    }
+}
+
+img, picture {
+  margin: 0;
+  max-width: 100%;
+}

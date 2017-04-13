@@ -1,0 +1,112 @@
+.vehicle-single-tabs, .profile-tabs {
+    .nav-tabs {
+        //border: 1px solid transparent;
+        border-bottom: none;
+        z-index: 100;
+        > li {
+            margin-bottom: -3px;
+            &.active {
+                > a {
+                    color: $primary-black;
+                    border: 1px solid lighten($primary-medium-gray, 25);
+                    border-bottom: none;
+                    &:hover {
+                        border-color: 1px solid lighten($primary-medium-gray, 25);
+                        border-bottom: none;
+                    }
+                }
+            }
+            > a {
+                font-family: $secondary-font-family;
+                color: rgba($primary-black, 0.4);
+                border: 1px solid transparent;
+                font-weight: 700;
+                border-radius: 0;
+                padding: 10px 40px;
+                text-transform: uppercase;
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 0;
+    }
+
+    .tab-info {
+        @include pad(10px 40px);
+        height: 100%;
+    }
+
+    .tab-pane {
+        z-index: 200;
+        overflow: scroll;
+        background-color: white;
+        border: 1px solid lighten($primary-medium-gray, 25);
+        height: 360px;
+    }
+
+    #googleMap {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+// we need padding for the user dashboard/profile page
+.profile-tabs {
+
+    .nav-tabs {
+        > li {
+            float :left;
+            width: 25%;
+            margin-bottom: -2px;
+            border: none;
+            &:active {
+                > a {
+                    border: none;
+                    background: none;
+                    &:hover, &:focus, &:target {
+                        background: none;
+                        border: none;
+                    }
+                }
+            }
+            > a {
+                background: none;
+                border: none;
+                width: 100%;
+                padding: 10px 12px;
+                text-align: center;
+                &:hover, &:focus, &:target {
+                    background: none;
+                }
+            }
+        }
+    }
+
+    .tab-pane {
+        border: none;
+        background: none;
+        padding: 20px;
+        height: auto;
+        overflow: auto;
+    }
+
+    .tab-submission {
+        padding: 10px 20px;
+    }
+
+    .profileImageWrap {
+        display: block;
+        text-align: center;
+        .profileImageWrap__inner {
+            max-width: 100%;
+            min-height: 150px;
+            padding: 12px;
+            img {
+                max-width: 128px;
+            }
+        }
+    }
+
+}

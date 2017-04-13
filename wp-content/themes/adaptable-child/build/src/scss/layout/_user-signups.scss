@@ -1,0 +1,17 @@
+.widecolumn {
+    text-align: Center;
+    padding: 10.8rem 0;
+
+    h2 {
+        margin-bottom: 2.5rem;
+    }
+
+    .lead-in, .view {
+        max-width: 31.25em;
+        margin: 0 auto;
+
+        a {
+            color: $primary-green;
+        }
+    }
+}

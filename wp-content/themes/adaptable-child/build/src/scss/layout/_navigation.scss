@@ -1,0 +1,186 @@
+.top-header__dropdown.mobileMenu:first-of-type {
+    margin-left: 1em;
+}
+
+#menu-toggle {
+    float: right;
+    font-size: 20px;
+    color: $primary-white;
+}
+
+.topnav {
+    float: right;
+    transition: all 0.3s ease 0.1s;
+}
+.top-navigation {
+    float: right;
+    list-style-type: none;
+    margin: 2px 0 0;
+    > li {
+        float: left;
+        line-height: 35px;
+        position: relative;
+        font-weight: 700;
+        margin-left: 10px;
+        font-family: $secondary-font-family;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        &:after {
+            content: "-";
+            color: $primary-light-gray;
+            padding-left: 10px;
+        }
+        > {
+            a {
+                display: inline-block;
+                color: $primary-black;
+            }
+            ul li {
+                letter-spacing: 0;
+                text-transform: none;
+                font-family: $base-font-family;
+            }
+        }
+    }
+}
+.dd-menu.topnav > ul > li {
+    > ul {
+        left: 0;
+        margin-left: 0;
+        top: 100%;
+    }
+    &.megamenu > ul {
+        top: 100%;
+    }
+}
+.user-login-panel {
+    float: left;
+    position: relative;
+}
+.user-login-panel .dropdown-menu {
+    z-index: 999;
+    right: -1px;
+    top: 120%;
+    left: auto;
+}
+.logged-in-user {
+    .user-dd-dropper {
+        width: 20px;
+        height: 20px;
+        background: $primary-light-gray;
+        text-align: center;
+        line-height: 20px;
+        display: inline-block;
+        border-radius: 3px;
+        margin-top: 8px;
+        transition: all 0.3s ease 0.1s;
+    }
+    &:hover .user-dd-dropper {
+        color: $primary-white;
+    }
+    .meta-data {
+        display: block;
+    }
+    .user-name {
+        font-size: 13px;
+        display: block;
+        color: $primary-medium-gray;
+    }
+}
+#login-popup #rememberme {
+    float: left;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+#registerformpopup .signup-form {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
+.navbar {
+    background: $white--op70;
+    margin-bottom: 0;
+    min-height: inherit;
+    position: relative;
+    z-index: 3;
+    border-radius: 0;
+    height: 52px;
+    box-shadow: 0 1px 2px $black--op70;
+    color: $primary-medium-gray;
+    transition: all 0.3s ease 0.1s;
+    #menu-toggle {
+        float: left;
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+        background: $primary-black;
+        width: 52px;
+        height: 51px;
+        line-height: 52px;
+        color: $primary-white;
+        margin-left: -1px;
+        overflow: hidden;
+    }
+    .sp-cont {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.sticky-header .navbar {
+    box-shadow: 0 3px 5px $black--op70;
+    background: $primary-white;
+    transition: box-shadow 0.1s linear 0s, background 0.1s linear 0s;
+}
+
+@media only screen and (max-width: 992px) {
+    .toggle-menu {
+      display   : none;
+      background: $primary-black;
+      width     : 100%;
+      position  : absolute;
+      height    : auto;
+      border-top: 1px solid $primary-light-gray;
+      top: 40px;
+      left: 0;
+      z-index: 9999;
+
+      > ul > li {
+        display      : block;
+        width        : 100%;
+        border-bottom: 1px solid $primary-light-gray;
+
+        > a {
+          display    : block;
+          padding    : 15px 0 15px 20px;
+          line-height: normal;
+          color      : $primary-white !important;
+        }
+
+        ul {
+          position     : static;
+          top          : 0;
+          left         : 0 !important;
+          margin       : 0;
+          border-radius: 0;
+          box-shadow   : none;
+        }
+
+        > ul li ul {
+          position  : static;
+          margin    : 0;
+          left      : 0 !important;
+          width     : 100%;
+          box-shadow: none;
+        }
+
+        &.megamenu > ul {
+          width: 100%;
+
+          .megamenu-container > div.row > div {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+}

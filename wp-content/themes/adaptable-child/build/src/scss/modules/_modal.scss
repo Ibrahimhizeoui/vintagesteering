@@ -1,0 +1,146 @@
+.modal {
+
+}
+
+    .modal-dialog {
+        margin: 0 auto;
+    }
+
+    .modal.fade .modal-dialog {
+        transform: translate(-50%, -25%);
+        top: 0;
+        left: 50%;
+        margin: 0;
+    }
+
+    .modal.in .modal-dialog {
+        transform: translate(-50%, 50px);
+        top: 0;
+        left: 50%;
+    }
+
+        .modal-content {
+            border-radius: 0;
+            background-color: $primary-cream-light;
+        }
+
+
+            .modal-header {
+                .close {
+                    margin-top: 0;
+                    font-size: 2.222222222em;
+                    &:hover, &:focus {
+                        border: 0;
+                    }
+                }
+            }
+                .modal-title {}
+
+
+            .modal-body {
+                .tabs {
+                    .nav-tabs {
+                        li {
+                            &.active {
+                                a {
+                                    border-top-width: 1px;
+                                }
+                            }
+                            a {
+                                border-radius: 0;
+                            }
+                        }
+                    }
+
+                    .tab-content {
+                        padding: 20px 0;
+
+                        .alert, .success {
+                            margin-bottom: 0;
+                        }
+                    }
+                        .tab-pane {
+                            &.active {}
+                        }
+                }
+
+                .form-clear {
+                    @include cf;
+                }
+
+            }
+
+
+            .modal-footer {}
+
+    .modal-dialog {
+        &--plain {
+            .modal-content {
+                padding: 50px 10%;
+                background: $primary-white;
+            }
+        }
+    }
+
+// form password strength validator
+// /* Sign Up Form */
+.signup-form {
+  border       : 1px solid $primary-light-gray;
+  position     : relative;
+  border-radius: 3px 3px 0 0;
+  box-shadow   : 0 0 5px $black--op70;
+}
+
+.regular-signup {
+  padding: 20px;
+}
+
+.signup-form .progress {
+  float        : left;
+  background   : $primary-light-gray;
+  width        : 80%;
+  height       : 6px;
+  margin-bottom: 0;
+  margin-top   : 8px;
+}
+
+.pass-actions {
+  float           : right;
+  border-radius   : 3px;
+  width           : 20px;
+  height          : 20px;
+  text-align      : center;
+  line-height     : 18px;
+  color           : $primary-medium-gray;
+  margin-left     : 5px;
+  background-color: $primary-light-gray;
+
+  &:hover {
+    color: $primary-white !important;
+  }
+}
+
+.hideShowPassword-toggle {
+  background-color   : transparent;
+  background-image   : url("images/assets/wink.png");
+  /* fallback */
+  background-image   : url('images/assets/wink.svg'), none;
+  background-position: 0 center;
+  background-repeat  : no-repeat;
+  border             : 2px solid transparent;
+  border-radius      : 0.25em;
+  cursor             : pointer;
+  font-size          : 100%;
+  height             : 44px;
+  margin             : 0;
+  max-height         : 100%;
+  padding            : 0;
+  overflow           : "hidden";
+  text-indent        : -999em;
+  width              : 46px;
+  appearance         : none;
+}
+
+.hideShowPassword-toggle-hide {
+  background-position: -44px center;
+}

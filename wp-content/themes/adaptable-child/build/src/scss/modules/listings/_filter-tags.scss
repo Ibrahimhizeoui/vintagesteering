@@ -1,0 +1,24 @@
+.search-filter-tags  {
+    margin: 1.5rem auto 1rem;
+
+    // remove bootstrap border-radius
+    &.nav-pills > li > a {
+        border-radius: 0;
+        background-color: lighten($primary-medium-gray, 45);
+        color: $primary-white;
+        transition: all 120ms ease;
+        font-weight: 400;
+        font-size: 0.888888889em;
+        &:hover {
+            background-color: lighten($primary-medium-gray, 50);
+        }
+    }
+
+    &__tag {
+        margin-bottom: 0.5em;
+        margin-right: 0.5em;
+        & + & {
+            margin-left: 0;
+        }
+    }
+}

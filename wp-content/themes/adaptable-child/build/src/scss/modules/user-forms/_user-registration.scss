@@ -1,0 +1,113 @@
+.userRegistration, .modalRequestInfo {
+    .gform_wrapper {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .top_label input.large,
+        .ginput_container_select .gfield_select,
+        .ginput_complex input[type=password],
+        .ginput_container_textarea textarea.large {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 14px !important;
+        }
+
+        .ginput_container_textarea textarea.large {
+            width: 97.5%;
+            margin-left: 0.8%;
+            text-indent: 0;
+            padding-left: 1.25%;
+            padding-right: 1.25%;
+        }
+
+        .selectpicker, .selectpicker .ginput_container_select {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .field_sublabel_above .ginput_complex.ginput_container_password label {
+            display: none;
+        }
+
+        .field_sublabel_above .ginput_complex.ginput_container_password input {
+            text-indent: 2.5%;
+        }
+
+        .ginput_complex .ginput_left,
+        .ginput_complex .ginput_right {
+            float: none;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gfield_password_strength {
+            margin-top: 0;
+            width: 100%;
+        }
+
+        .g-recaptcha {
+            text-align: center;
+            line-height: 1;
+            > div {
+                display: inline-block;
+            }
+        }
+
+        .gform_footer {
+            padding-bottom: 0;
+            .button {
+                width: 100%;
+            }
+        }
+
+        ul.top_label li.gfield .gfield_password_strength {
+            width: 100%;
+        }
+
+
+        // Errors
+
+        .top_label .gfield_error {
+            width: 100%;
+        }
+
+        li.gfield.gfield_error.gfield_contains_required {
+            margin-right: auto;
+            margin-left: auto !important;
+        }
+
+        li.gfield.gfield_error.gfield_contains_required div.gfield_description,
+        li.gfield.gfield_error.gfield_contains_required div.ginput_container,
+        li.gfield.gfield_error.gfield_contains_required fieldset legend.gfield_label,
+        li.gfield.gfield_error.gfield_contains_required label.gfield_label,
+        .gfield_error .ginput_complex .ginput_left input[type=password],
+        .gfield_error .ginput_complex .ginput_right input[type=password] {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            width: 100%;
+            white-space: normal;
+        }
+
+        .gfield_description {
+            width: 100%;
+        }
+
+        .gfield_description .validation_message {
+            width: 100%;
+            max-width: 100%;
+        }
+
+    }
+
+
+    @include media($medium-mid-screen-up) {
+        .gform_wrapper .gform_footer {
+            float: none ;
+            width: 100%;
+        }
+    }
+}

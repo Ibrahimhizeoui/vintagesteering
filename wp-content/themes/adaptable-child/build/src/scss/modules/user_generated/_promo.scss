@@ -1,0 +1,52 @@
+// .promoSet {}
+
+.promo {
+    @include cf;
+    text-align: center;
+
+    &__icon {
+        display: block;
+    }
+
+        &__image {
+
+        }
+
+    &__article {
+        max-width: 300px;
+        margin: 20px auto 0 auto;
+
+        h6 {
+            text-transform: uppercase;
+            letter-spacing: 0;
+        }
+
+        p {
+            margin: 0.625rem auto 0 auto;
+            font-size: 0.833333333em;
+        }
+    }
+
+    & + & {
+        margin-top: 50px;
+    }
+
+    @include media($medium-screen-up) {
+        & + & {
+            margin-top: 0;
+        }
+    }
+
+    @include media($large-screen-up) {
+        text-align: left;
+
+        &__icon {
+            float: left;
+        }
+        &__article {
+            max-width: none;
+            margin-top: 0;
+            padding-left: 80px;
+        }
+    }
+}

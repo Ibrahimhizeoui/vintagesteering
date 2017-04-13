@@ -1,0 +1,135 @@
+body {
+    background-color     : $primary-cream;
+    overflow-x           : hidden;
+}
+
+.body {
+    padding-top: 109px;
+
+    @include media($large-screen-up) {
+         padding-top: 124px;
+    }
+}
+
+.main {
+    background-color: $primary-cream-light;
+}
+
+.container {
+    &--xlarge {
+        width: 100%;
+        max-width: 81.25rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--large {
+        max-width: 68.75rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--medium {
+        max-width: 53.125rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--small {
+        max-width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--spacious {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    &--spacious--plus {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    &--spacious--plus--plus {
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+    }
+
+    &--relative {
+        position: relative;
+    }
+
+    & + & {
+        padding-top: 0;
+    }
+
+    @include media($medium-mid-screen-up) {
+        &--spacious {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        &--spacious--plus {
+            padding-top: 7.5rem;
+            padding-bottom: 7.5rem;
+        }
+
+        &--spacious--plus--plus {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+
+        &--relative {
+            position: relative;
+        }
+
+    }
+}
+
+.blockDisplay {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.space {
+    padding-top: 40px;
+}
+
+.spaced {
+    margin-top: 20px;
+    &--plus {
+        margin-top: 40px;
+    }
+    &--plusplus {
+        margin-top: 80px;
+    }
+}
+
+// File upload buttons
+.customFileUpload {
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    padding-left: 5%;
+    text-align: center;
+    width: 100%;
+    padding-right: 6%;
+
+    &__input, input[type="file"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        width: 100%;
+        height: 100%;
+    }
+}

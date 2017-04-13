@@ -1,0 +1,452 @@
+<?php
+/*
+Template Name: Home
+*/
+get_header();
+global $imic_options;
+//Get Page Banner Type
+$id = is_home() ? get_option('page_for_posts') : get_the_ID();
+
+// includes the controller file for billboards
+include('includes/billboard/billboard.php');
+
+$latest_vehicle_scroll = get_post_meta($id, 'imic_home_vehicle_auto_scroll', true);
+$latest_vehicle_scroll_speed = get_post_meta($id, 'imic_browse_by_auto_scroll_speed', true);
+$latest_vehicle_scroll_speed = ($latest_vehicle_scroll_speed == '') ? 5000 : $latest_vehicle_scroll_speed;
+$vehicle_speed = ($latest_vehicle_scroll == 1) ? $latest_vehicle_scroll_speed : '';
+$vehicle_switch = get_post_meta($id, 'imic_home_vehicle_switch', true);
+$modal_search_switch = get_post_meta($id, '', true);
+$news_switch = get_post_meta($id, 'imic_home_news_switch', true);
+$testimonial_switch = get_post_meta($id, 'imic_home_testimonial_switch', true);
+$make_search_switch = get_post_meta($id, 'imic_search_by_specification_switch', true);
+$browse_listing = imic_get_template_url('template-listing.php');
+
+if ($make_search_switch == 1):
+    if (is_plugin_active('imithemes-listing/listing.php')):
+
+        $specification_scroll = get_post_meta($id, 'imic_home_search_specification_auto_scroll', true);
+        $specification_vehicle_scroll_speed = get_post_meta($id, 'imic_home_search_specification_auto_scroll_speed', true);
+        $specification_vehicle_scroll_speed = ($specification_vehicle_scroll_speed == '') ? 5000 : $specification_vehicle_scroll_speed;
+        $specification_speed = ($specification_scroll == 1) ? $specification_vehicle_scroll_speed : '';
+        $search_by_spec_value = get_post_meta(get_the_ID(), 'imic_search_by_specification', true);
+        $title = get_post_meta(get_the_ID(), 'imic_search_by_specification_title', true);
+        $url = get_post_meta(get_the_ID(), 'imic_search_by_specification_url', true);
+        $search_listing = imic_get_template_url('template-listing.php');
+        $spec_int = get_post_meta($search_by_spec_value, 'imic_plugin_spec_char_type', true);
+        $slug = $spec_int == 0 ? imic_the_slug($search_by_spec_value) : 'int_'.imic_the_slug($search_by_spec_value) ;
+
+        if (!empty($search_by_spec_value)): ?>
+
+            <div class="makeCarousel">
+                <div class="container">
+                    <!-- Search by make -->
+                    <div class="row">
+                        <div class="col-md-7 makeCarousel__owl">
+                            <div class="row">
+                                <ul class="owl-carousel" id="make-carousel"
+                                    data-columns="5"
+                                    data-autoplay="<?php echo esc_attr($specification_speed);?>"
+                                    data-pagination="no"
+                                    data-arrows="no"
+                                    data-single-item="no"
+                                    data-items-desktop="10"
+                                    data-items-desktop-small="4"
+                                    data-items-tablet="3"
+                                    data-items-mobile="3"
+                                    <?php if (isset($imic_options['enable_rtl']) && $imic_options['enable_rtl'] == 1): ?>
+                                        data-rtl="rtl"
+                                    <?php else: ?>
+                                        data-rtl="ltr"
+                                    <?php endif; ?>>
+
+                                    <?php $values = get_post_meta($search_by_spec_value, 'specifications_value', true); ?>
+
+                                    <?php if (!empty($values)): ?>
+                                        <?php foreach ($values as $value): ?>
+                                            <?php $imgs = $value['imic_plugin_spec_image']; ?>
+                                            <li class="item">
+                                                <a href="<?php echo esc_url(add_query_arg($slug, $value['imic_plugin_specification_values'], $search_listing));?>"><img src="<?php echo esc_url($imgs); ?>" alt="">
+                                                </a>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-md-offset-2 makeCarousel__viewAll">
+                            <?php if ($url != ''): ?>
+                                <a href="<?php echo esc_url($url); ?>" class="link link--bold link--spaced"><?php _e('All Manufacturers', 'adaptable-child');?></a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+    <?php endif; ?>
+<?php endif; ?>
+
+<!-- Start Body Content -->
+<main class="main" role="main">
+<<<<<<< HEAD
+        <?php if ($vehicle_switch == 1): ?>
+            <?php if (is_plugin_active('imithemes-listing/listing.php')): ?>
+
+                <?php
+                    $vehicle_count = get_post_meta($id, 'imic_home_vehicle_count', true);
+                    $vehicle_title = get_post_meta($id, 'imic_home_vehicle_title', true);
+                    $vehicle_column = get_post_meta($id, 'imic_home_vehicle_column', true);
+                ?>
+
+                <section class="listing-block recent-vehicles container container--spacious">
+                    <div class="listing-header row">
+                        <div class="col-sm-8 listing-header-title">
+                            <h6><?php echo esc_attr($vehicle_title); ?></h6>
+                        </div>
+                        <div class="col-sm-4 listing-header-link">
+                            <a class="link link--black" href="<?php echo home_url().'/all-cars'; ?>">View All</a>
+                        </div>
+                    </div>
+
+                    <div class="listing-container row">
+                        <ul <?php if (isset($imic_options['enable_rtl']) && $imic_options['enable_rtl'] == 1): ?> data-rtl="rtl" <?php else: ?> data-rtl="ltr" <?php endif; ?>>
+                            <?php
+                            $badges_type = (isset($imic_options['badges_type'])) ? $imic_options['badges_type'] : '0';
+                            $specification_type = (isset($imic_options['short_specifications'])) ? $imic_options['short_specifications'] : '0';
+                            $badge_ids = ($badges_type == '0') ? $badge_ids = (isset($imic_options['badge_specs'])) ? $imic_options['badge_specs'] : array() : $badge_ids = array() ;
+                            $detailed_specs = ($specification_type == 0) ? (isset($imic_options['vehicle_specs'])) ? $imic_options['vehicle_specs'] : array() : array() ;
+
+                            $img_src = '';
+
+                            $category_rail = (isset($imic_options['category_rail'])) ? $imic_options['category_rail'] : '0';
+                            $additional_specs = (isset($imic_options['additional_specs'])) ? $imic_options['additional_specs'] : array();
+                            $additional_spec_type = get_post_meta($additional_specs, 'imic_plugin_spec_char_type', true);
+                            $additional_spec_slug = imic_the_slug($additional_specs);
+                            $additional_spec_slug = ($additional_spec_type == 2) ? 'char_'.$additional_spec_slug : $additional_spec_slug;
+                            $additional_specs_all = get_post_meta($additional_specs, 'specifications_value', true);
+                            $highlighted_specs = (isset($imic_options['highlighted_specs'])) ? $imic_options['highlighted_specs'] : array();
+                            $unique_specs = (isset($imic_options['unique_specs'])) ? $imic_options['unique_specs'] : '';
+
+                            $args_cars = array(
+                                'post_type' => 'cars',
+                                'posts_per_page' => $vehicle_count,
+                                'post_status' => 'publish',
+                                'meta_query' => array('relation' => 'AND',
+                                    array(
+                                        'key' => 'imic_plugin_ad_payment_status',
+                                        'value' => '1', 'compare' => '='
+                                    ),
+                                    array(
+                                        'key' => 'imic_plugin_listing_end_dt',
+                                        'value' => date('Y-m-d'),
+                                        'compare' => '>='
+                                    )
+                                )
+                            );
+
+                            $cars_listing = new WP_Query($args_cars);
+
+                            if ($cars_listing->have_posts()): while ($cars_listing->have_posts()):
+
+                                $cars_listing->the_post();
+
+                                if (is_plugin_active('imi-classifieds/imi-classified.php')) {
+                                    $badge_ids = imic_classified_badge_specs(get_the_ID(), $badge_ids);
+                                    $detailed_specs = imic_classified_short_specs(get_the_ID(), $detailed_specs);
+                                }
+=======
+    <?php if ($vehicle_switch == 1): ?>
+        <?php if (is_plugin_active('imithemes-listing/listing.php')): ?>
+>>>>>>> develop_switching_banners_to_acf
+
+            <?php
+                $vehicle_count = get_post_meta($id, 'imic_home_vehicle_count', true);
+                $vehicle_title = get_post_meta($id, 'imic_home_vehicle_title', true);
+                $vehicle_column = get_post_meta($id, 'imic_home_vehicle_column', true);
+            ?>
+
+            <section class="listing-block recent-vehicles container container--spacious">
+                <div class="listing-header row">
+                    <div class="col-sm-8 listing-header-title">
+                        <h6><?php echo esc_attr($vehicle_title); ?></h6>
+                    </div>
+                    <div class="col-sm-4 listing-header-link">
+                        <a class="link link--black" href="<?php echo home_url().'/all-cars'; ?>">View All</a>
+                    </div>
+                </div>
+
+<<<<<<< HEAD
+                                $highlight_value = rtrim(get_the_title());
+                                $listingTitle = strlen($highlight_value) > 30 ? substr($highlight_value, 0, 30) . "..." : $highlight_value;
+=======
+                <div class="listing-container row">
+                    <ul <?php if (isset($imic_options['enable_rtl']) && $imic_options['enable_rtl'] == 1): ?> data-rtl="rtl" <?php else: ?> data-rtl="ltr" <?php endif; ?>>
+                        <?php
+                        $badges_type = (isset($imic_options['badges_type'])) ? $imic_options['badges_type'] : '0';
+                        $specification_type = (isset($imic_options['short_specifications'])) ? $imic_options['short_specifications'] : '0';
+                        $badge_ids = ($badges_type == '0') ? $badge_ids = (isset($imic_options['badge_specs'])) ? $imic_options['badge_specs'] : array() : $badge_ids = array() ;
+                        $detailed_specs = ($specification_type == 0) ? (isset($imic_options['vehicle_specs'])) ? $imic_options['vehicle_specs'] : array() : array() ;
+
+                        $img_src = '';
+
+                        $category_rail = (isset($imic_options['category_rail'])) ? $imic_options['category_rail'] : '0';
+                        $additional_specs = (isset($imic_options['additional_specs'])) ? $imic_options['additional_specs'] : array();
+                        $additional_spec_type = get_post_meta($additional_specs, 'imic_plugin_spec_char_type', true);
+                        $additional_spec_slug = imic_the_slug($additional_specs);
+                        $additional_spec_slug = ($additional_spec_type == 2) ? 'char_'.$additional_spec_slug : $additional_spec_slug;
+                        $additional_specs_all = get_post_meta($additional_specs, 'specifications_value', true);
+                        $highlighted_specs = (isset($imic_options['highlighted_specs'])) ? $imic_options['highlighted_specs'] : array();
+                        $unique_specs = (isset($imic_options['unique_specs'])) ? $imic_options['unique_specs'] : '';
+                        $args_cars = array('post_type' => 'cars', 'posts_per_page' => $vehicle_count, 'post_status' => 'publish', 'meta_query' => array('relation' => 'AND', array('key' => 'imic_plugin_ad_payment_status', 'value' => '1', 'compare' => '='), array('key' => 'imic_plugin_listing_end_dt', 'value' => date('Y-m-d'), 'compare' => '>=')));
+                        $cars_listing = new WP_Query($args_cars);
+
+                        if ($cars_listing->have_posts()): while ($cars_listing->have_posts()):
+
+                            $cars_listing->the_post();
+
+                            if (is_plugin_active('imi-classifieds/imi-classified.php')) {
+                                $badge_ids = imic_classified_badge_specs(get_the_ID(), $badge_ids);
+                                $detailed_specs = imic_classified_short_specs(get_the_ID(), $detailed_specs);
+                            }
+
+                            $badge_ids = imic_filter_lang_specs($badge_ids);
+                            $post_author_id = get_post_field('post_author', get_the_ID());
+                            $user_info_id = get_user_meta($post_author_id, 'imic_user_info_id', true);
+                            $author_role = get_option('blogname');
+
+                            if (!empty($user_info_id)) {
+                                $term_list = wp_get_post_terms($user_info_id, 'user-role', array('fields' => 'names'));
+                                if (!empty($term_list)) {
+                                    $author_role = $term_list[0];
+                                } else {
+                                    $author_role = get_option('blogname');
+                                }
+                            }
+>>>>>>> develop_switching_banners_to_acf
+
+                            $specifications = get_post_meta(get_the_ID(), 'feat_data', true);
+                            $unique_value = imic_vehicle_price(get_the_ID(), $unique_specs, $specifications);
+                            $new_highlighted_specs = imic_filter_lang_specs_admin($highlighted_specs, get_the_ID());
+                            $highlighted_specs = $new_highlighted_specs;
+
+                            $highlight_value = rtrim(mb_strimwidth(get_the_title(), 0, 24))."...";
+
+                            $details_value = imic_vehicle_all_specs(get_the_ID(), $detailed_specs, $specifications);
+                            $data_ser_type = (get_option('imic_specifications_upd_st') != 1) ? 0 : get_option('imic_specifications_upd_st');
+
+                            if (!empty($additional_specs)) {
+
+                                if ($data_ser_type == '0') {
+                                    $image_key = array_search($additional_specs, $specifications['sch_title']);
+                                    $additional_specs_value = $specifications['start_time'][$image_key];
+                                } else {
+                                    $img_char = imic_the_slug($additional_specs);
+                                    $additional_specs_value = get_post_meta(get_the_ID(), 'char_'.$img_char, true);
+                                }
+
+                                $this_key = find_car_with_position($additional_specs_all, $additional_specs_value);
+                                $img_src = $additional_specs_all[$this_key]['imic_plugin_spec_image'];
+                            }
+
+                            $badges = imic_vehicle_all_specs(get_the_ID(), $badge_ids, $specifications);
+
+                            if (has_post_thumbnail()) {
+                                $thumbid = get_post_thumbnail_id();
+                                $postImage = wp_get_attachment_image_src($thumbid, 'thumb', true)[0];
+                            } else {
+                                $postImage = (isset($imic_options['default_car_image'])) ? $imic_options['default_car_image']['url'] :  $thumb_url[0];
+                            } ?>
+
+                            <li class="item col-sm-6 col-md-4">
+                                <div class="vehicle-block format-standard">
+
+                                    <a href="<?php echo esc_url(get_permalink());?>" class="vehicle-listing-image media-box">
+                                        <img src="<?php echo $postImage; ?>" alt="Image of <?php echo esc_attr($highlight_value); ?>" title="Car Image">
+                                    </a>
+
+                                    <div class="vehicle-block-content">
+
+                                        <?php
+                                        $start = 1;
+                                        $badge_position = array('vehicle-age', 'premium-listing', 'third-listing', 'fourth-listing');
+                                        ?>
+
+                                        <div class="vehicleBadges">
+                                            <?php foreach ($badges as $badge):
+                                                $badge_class = ($start == 1) ? 'default' : 'success';
+                                                echo '<span class="label label-'.esc_attr($badge_class).' '.esc_attr($badge_position[$start - 1]).'">'.esc_attr($badge).'</span>';
+                                                ++$start;
+                                                if ($start == 4) break;
+                                            endforeach;
+                                            ?>
+                                        </div>
+
+<<<<<<< HEAD
+                                            <div class="vehicleBadges">
+                                                <?php foreach ($badges as $badge):
+                                                    $badge_class = ($start == 1) ? 'default' : 'success';
+                                                    echo '<span class="label label-'.esc_attr($badge_class).' '.esc_attr($badge_position[$start - 1]).'">'.esc_attr($badge).'</span>';
+                                                    ++$start;
+                                                    if ($start == 4) break;
+                                                endforeach;
+                                                ?>
+                                            </div>
+
+                                            <?php if (!empty($highlight_value)): ?>
+                                                <h6 class="vehicle-title">
+                                                    <a href="<?php echo esc_url(get_permalink());?>"><?php echo $listingTitle; ?></a>
+                                                </h6>
+                                            <?php endif; ?>
+
+                                            <span class="vehicle-meta">
+                                                <?php
+                                                $total = 1;
+                                                if (!empty($details_value)) {
+                                                    foreach ($details_value as $value) {
+                                                        echo esc_attr($value).', ';
+                                                        if ($total++ == 4) break;
+                                                    }
+                                                }
+                                                ?>
+                                            </span>
+
+                                            <?php if ($img_src != ''): ?>
+
+                                                <?php
+                                                $speci_value = $additional_specs_all[$this_key]['imic_plugin_specification_values'];
+                                                $speci_value = str_replace(' ', '%20', $speci_value);
+                                                ?>
+=======
+>>>>>>> develop_switching_banners_to_acf
+
+
+                                        <?php if (!empty($highlight_value)): ?>
+                                            <h6 class="vehicle-title">
+                                                <a href="<?php echo esc_url(get_permalink());?>"><?php echo $highlight_value; ?></a>
+                                            </h6>
+                                        <?php endif; ?>
+
+                                        <span class="vehicle-meta">
+                                            <?php
+                                            $total = 1;
+                                            if (!empty($details_value)) {
+                                                foreach ($details_value as $value) {
+                                                    echo esc_attr($value).', ';
+                                                    if ($total++ == 4) break;
+                                                }
+                                            }
+                                            ?>
+                                        </span>
+
+                                        <?php if ($img_src != ''): ?>
+
+                                            <?php
+                                            $speci_value = $additional_specs_all[$this_key]['imic_plugin_specification_values'];
+                                            $speci_value = str_replace(' ', '%20', $speci_value);
+                                            ?>
+
+                                            <a href="<?php echo esc_url(add_query_arg($additional_spec_slug, $speci_value, $browse_listing)); ?>"
+                                               title="<?php _e('View all', 'adaptable-child'); echo esc_attr($additional_specs_all[$this_key]['imic_plugin_specification_values']); ?>"
+                                               class="vehicle-body-type">
+                                               <img src="<?php echo esc_url($additional_specs_all[$this_key]['imic_plugin_spec_image']);?>" alt="">
+                                            </a>
+
+                                       <?php endif; ?>
+
+                                       <span class="vehicle-cost"><?php echo esc_attr($unique_value);?></span>
+                                        <?php
+                                        if ($category_rail == '1' && is_plugin_active('imi-classifieds/imi-classified.php')) {
+                                            echo imic_get_cats_list(get_the_ID(), 'list');
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                            </li>
+                        <?php endwhile; endif; wp_reset_postdata(); ?>
+                    </ul>
+                </div>
+            </section>
+        <?php endif; ?>
+    <?php endif; ?>
+
+    <?php if (have_posts()): ?>
+        <div class="homeContent container container--spacious">
+            <div class="row">
+                <div class="col-md-6 homeContent__cmsContent">
+                    <?php while (have_posts()): the_post(); ?>
+                        <?php the_content(); ?>
+                    <?php endwhile; ?>
+                </div>
+                <div class="col-md-6">
+                    <?php
+                    $args = [
+                        'before_widget' => '<div class ="widget widget--newsletter">',
+                        'after_widget'  => '</div>',
+                        'before_title'  => '<h6 class="widgettitle" >',
+                        'after_title'   => '</h6>'
+                    ];
+                    $instance = [
+                        'title' => 'A Vintage Steering Newsletter'
+                    ];
+                    the_widget('newsletter', $instance, $args); ?>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <?php if ($news_switch == 1 || $testimonial_switch == 1): ?>
+
+        <?php
+        $latest_news_scroll = get_post_meta($id, 'imic_home_news_auto_scroll', true);
+        $news_vehicle_scroll_speed = get_post_meta($id, 'imic_home_news_auto_scroll_speed', true);
+        $news_vehicle_scroll_speed = ($news_vehicle_scroll_speed == '') ? 5000 : $news_vehicle_scroll_speed;
+        $news_speed = ($latest_news_scroll == 1) ? $news_vehicle_scroll_speed : '';
+        $news_title = get_post_meta(get_the_ID(), 'imic_home_news_title', true);
+        $allnews_title = get_post_meta(get_the_ID(), 'imic_home_allnews_title', true);
+        $allnews_url = get_post_meta(get_the_ID(), 'imic_home_allnews_url', true);
+        ?>
+
+        <section class="latest-news container container--spacious--plus">
+            <div class="listing-header latest-news__header row">
+                <div class="col-sm-8 listing-header-title">
+                    <h6><?php echo esc_attr($news_title);?></h6>
+                </div>
+                <div class="col-sm-4 listing-header-link">
+                    <?php if ($allnews_url != '' && $allnews_url != ''): ?>
+                        <a class="link link--black" href="<?php echo esc_url($allnews_url);?>"><?php echo esc_attr($allnews_title);?></a>
+                    <?php endif; ?>
+                </div>
+            </div>
+
+            <div class="listing-container latest-news__container row">
+                <ul <?php if (isset($imic_options['enable_rtl']) && $imic_options['enable_rtl'] == 1): ?> data-rtl="rtl" <?php else: ?> data-rtl="ltr" <?php endif; ?>>
+                    <?php
+                    $args_post = array('post_type' => 'post', 'posts_per_page' => 3);
+                    $post_listing = new WP_Query($args_post);
+
+                    if ($post_listing->have_posts()): while ($post_listing->have_posts()): $post_listing->the_post(); ?>
+                        <li class="item col-sm-6 col-md-4">
+                            <div class="post-block format-standard">
+                                <?php if (has_post_thumbnail()): ?>
+                                    <a href="<?php echo esc_url(get_permalink());?>" class="media-box post-image"><?php the_post_thumbnail('600x400');?></a>
+                                <?php endif; ?>
+                                <div class="post-actions">
+                                    <div class="post-date"><?php echo esc_attr(get_the_date(get_option('date_format'), get_the_ID()));?></div>
+                                </div>
+                                <h5 class="post-title"><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo get_the_title(); ?></a></h5>
+                                <div class="post-content">
+                                    <?php echo imic_excerpt(10); ?>
+                                </div>
+                            </div>
+                        </li>
+                    <?php endwhile; endif; wp_reset_postdata(); ?>
+                </ul>
+            </div>
+        </section>
+    <?php endif; ?>
+</main>
+
+<?php
+// Lower billboard for homepage
+include('includes/billboard/billboard-home-lower.php');
+
+get_footer(); ?>

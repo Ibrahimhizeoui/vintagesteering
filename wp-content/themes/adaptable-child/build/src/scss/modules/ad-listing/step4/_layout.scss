@@ -1,0 +1,48 @@
+#listing-add-form-four {
+    .image-placeholder {
+        //@include cf;
+        margin-top: 15px;
+        &:last-of-type {
+            margin-top: 0;
+        }
+    }
+
+    .thumbnail {
+        background: none;
+        border-radius:0;
+        padding: 0;
+    }
+
+    .property-img {
+        margin-top: 20px;
+        .button {
+            width: 100%;
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+        }
+
+        // if this has been set as a default image
+        > img {
+            border: 3px solid lighten($primary-green, 20);
+        }
+    }
+
+    textarea {
+        text-indent: 0;
+    }
+
+    #fileMessages {
+        margin-top: 1em;
+        font-size: 0.8125em;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    #photoList {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

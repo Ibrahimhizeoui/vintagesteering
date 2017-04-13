@@ -1,0 +1,52 @@
+// Icon globals
+$button-colour: $primary-white;
+
+// Button width/height
+$button-width: 100px;
+$button-height: 100px;
+
+// Icon width/height
+$icon-width: 25px;
+$icon-height: 35px;
+
+// Border is the width/height divided by 2
+$icon-vertical-border: ($icon-height / 2);
+
+/**
+ * To centralize the icon
+ * divide the overall button (width/height)
+ * minus the icon (width/height) divided by 2
+ */
+$icon-vertical-padding: floor((($button-height / 2) - ($icon-height / 2)));
+$icon-horizontal-padding: floor((($button-width / 2) - ($icon-width / 2)));
+
+.playButton {
+    display:       block;
+    width:         $button-width;
+    height:        $button-height;
+    border-radius: 50%;
+    border:        2px solid $button-colour;
+    padding:       $icon-vertical-padding $icon-horizontal-padding;
+    animation:     pulse 2s ease-in-out infinite;
+    cursor:        pointer;
+
+    &__accessibility {
+        @include screen-reader-text;
+    }
+
+    &__icon {
+        width:         $icon-width;
+        height:        $icon-height;
+        border-top:    $icon-vertical-border solid transparent;
+        border-bottom: $icon-vertical-border solid transparent;
+        border-left:   $icon-width solid $button-colour;
+        border-radius: 2px;
+        display:       block;
+    }
+}
+
+@keyframes pulse {
+	0% { transform: scale3d(1, 1, 1); }
+	50% { transform: scale3d(1.08, 1.08, 1.08); }
+	100% { transform: scale3d(1, 1, 1); }
+}

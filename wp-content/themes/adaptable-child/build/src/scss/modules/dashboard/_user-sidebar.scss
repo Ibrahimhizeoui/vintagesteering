@@ -1,0 +1,68 @@
+.users-sidebar {
+    .add-listing-btn {
+        margin-bottom: 15px;
+    }
+
+    .list-group {
+        margin-top: 0;
+        box-shadow: none;
+        li {
+            padding: 0;
+            a {
+                display: block;
+                padding: 10px 15px;
+            }
+            a > i {
+                color: $primary-medium-gray;
+                margin-right: 5px;
+            }
+            &.active {
+                &:hover a > i,
+                a > i {
+                    color: $primary-white;
+                }
+                .badge {
+                    color: $primary-black;
+                }
+            }
+        }
+        .badge {
+            top: 11px;
+            right: 6%;
+            position: relative;
+        }
+    }
+    li.active {
+        background: $primary-gold;
+        border-color: $primary-gold;
+
+        &:hover {
+            background: $primary-gold;
+            border-color: $primary-gold;
+        }
+
+        &:hover a,
+        a {
+            color: $primary-white;
+        }
+    }
+
+    .list-group-item:first-child,
+    .list-group-item:last-child {
+        border-radius: 0;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .users-sidebar {
+      width: 213px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .users-sidebar {
+      margin-bottom: 30px;
+      width        : 100%;
+    }
+}

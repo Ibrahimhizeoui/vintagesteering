@@ -1,0 +1,12 @@
+.listing-step-three-conf {
+    margin-top: 40px;
+    &__continue {
+        margin-top: 20px;
+    }
+}
+
+@include media($large-screen-up) {
+    .listing-step-three-conf {
+        margin-top: 80px;
+    }
+}

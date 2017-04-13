@@ -1,0 +1,217 @@
+.flexslider {
+    margin: 0;
+    padding: 0;
+    background: url("images/loader.gif") no-repeat scroll center center;
+    .slides > li {
+        display: none;
+        backface-visibility: hidden;
+    }
+}
+
+.slides:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .slides {
+    display: block;
+}
+
+* html .slides {
+    height: 1%;
+}
+
+.flexslider .slides {
+    zoom: 1;
+    margin: 0;
+    list-style-type: none;
+}
+
+.hero-slider {
+    position: relative;
+    z-index: 1;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    .flex-viewport {
+        width: 100%;
+    }
+    &.flexslider {
+        > ul.slides {
+            height: 100%;
+        }
+        ul.slides li {
+            height: 450px;
+            width: 100%;
+            overflow: hidden;
+            position: static;
+            background-attachment: scroll !important;
+        }
+    }
+}
+
+.flexslider .flex-control-nav {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 111;
+    left: 0;
+    bottom: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-slider.flexslider {
+    .flex-control-nav {
+        bottom: -40px;
+        transition: all 0.3s ease 0.1s;
+    }
+    &:hover .flex-control-nav {
+        bottom: 10px;
+        transition: bottom 0.3s 0.2s;
+    }
+}
+
+.flexslider {
+    .flex-control-nav {
+        li {
+            display: inline;
+        }
+        a {
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background-color: $primary-white;
+            display: inline-block;
+            margin: 0 6px;
+            text-indent: -9999px;
+            text-decoration: none;
+        }
+    }
+}
+.hero-slider.flexslider {
+    .flex-next,
+    .flex-prev {
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        right: -100px;
+        margin-top: -50px;
+        transition: all 0.3s ease 0.1s;
+        font-size: 30px;
+        line-height: 100px;
+        display: block;
+        text-align: left;
+    }
+}
+.flexslider:hover {
+    .flex-next,
+    .flex-prev {
+        display: block;
+    }
+}
+.hero-slider.flexslider ul.slides li {
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .container {
+        vertical-align: middle;
+        display: table;
+        height: 100%;
+        .slider-caption {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+.slider-caption > span {
+    font-size: 24px;
+    color: $primary-white;
+    background: $black--op70;
+    padding: 30px;
+}
+.hero-slider.flexslider {
+    .flex-prev {
+        left: -100px;
+        padding-left: 60px;
+    }
+    .flex-next {
+        padding-left: 30px;
+    }
+    &:hover {
+        .flex-prev {
+            left: -50px;
+            transition: left 0.3s 0.2s;
+        }
+        .flex-next {
+            right: -50px;
+            transition: right 0.3s 0.2s;
+        }
+    }
+}
+
+.flex-direction-nav {
+    @include cf;
+    margin: 0;
+    list-style-type: none;
+    top: 50%;
+    left: 0;
+    margin-top: -25px;
+    position: absolute;
+    height: 0;
+    overflow: visible;
+    width: 100%;
+
+    li {
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+        &:first-child {
+            float: left;
+            a:before {
+                content: "\f104";
+            }
+        }
+        &:last-child {
+            float: right;
+            a:before {
+                content: "\f105";
+            }
+        }
+    }
+
+    a {
+        background: $black--op70;
+        color: $primary-light-gray;
+        display: block;
+        position: absolute;
+        font-size: 14px;
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        font-family: $font-awesome;
+        font-style: normal;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-decoration: none;
+        display: none;
+        text-align: center;
+    }
+}
+
+.entry .flexslider {
+    margin-bottom: 40px;
+}
+.slider-wrapper {
+    position: relative;
+    min-height: 200px;
+    background: $primary-medium-gray;
+}

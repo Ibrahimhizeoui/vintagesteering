@@ -1,0 +1,7 @@
+.pageContent {
+    &__row {
+        & + & {
+            margin-top: 50px;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.gform_wrapper.left-aligned_wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.gform_wrapper {
+    max-width: 100%;
+
+    .top_label input.large,
+    .top_label select.large,
+    .top_label input.medium,
+    .top_label select.medium,
+    .top_label input.small,
+    .top_label select.small {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .top_label li.gfield.gf_left_half input.large,
+    .top_label li.gfield.gf_left_half input.medium,
+    .top_label li.gfield.gf_left_half select.large,
+    .top_label li.gfield.gf_left_half select.medium,
+    .top_label li.gfield.gf_right_half input.large,
+    .top_label li.gfield.gf_right_half input.medium,
+    .top_label li.gfield.gf_right_half select.large,
+    .top_label li.gfield.gf_right_half select.medium {
+        margin: 0 auto;
+    }
+
+    .gfield_description .validation_message {
+        white-space: normal;
+    }
+
+    .ginput_container_select {
+        padding: 11px 0;
+    }
+
+    .top_label input.large,
+    .top_label select.large {
+        width: 97.5%;
+        margin-left: 0.8%;
+        text-indent: 3.5%;
+    }
+
+    .gfield_description {
+        margin:0 auto;
+        white-space: nowrap;
+        padding-top: 0 !important;
+        color: lighten($primary-medium-gray, 10);
+        width: 87%;
+
+        &__text-bottom {
+            vertical-align: text-bottom;
+            display: inline-block;
+            height: 56px;
+        }
+
+        &__text {
+            display: inline-block;
+            white-space:normal;
+        }
+    }
+
+    .top_label li.gfield.gf_left_half textarea,
+    .top_label li.gfield.gf_right_half textarea {
+        margin: 0 auto;
+        width: 97.5%;
+    }
+
+    .gsection {
+        margin: 0 0 0.5em 1% !important;
+        padding: 0.5em 0 0 0 !important;
+        width: 97%;
+        border-bottom: none;
+    }
+
+    .gform_footer {
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+.gform_fields {
+    @include cf;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+    .gform_wrapper {
+        .gform_body .top_label li.gfield.gf_right_half,
+        .gform_body .top_label li.gfield.gf_left_half,
+        .top_label li.gfield.gfield_error.gf_left_half,
+        .top_label li.gfield.gfield_error.gf_right_half {
+            float: left;
+            clear: left !important;
+            width: 100% !important;
+            margin-right: 0 !important;
+            input, textarea {
+                width: 100%;
+            }
+        }
+
+        .top_label input.large,
+        .top_label select.large {
+            width: 100%;
+            margin-left: 0;
+            text-indent: 5%;
+        }
+
+        .gform_body .top_label li.gfield.gf_right_half.pull-right {
+            float: left !important;
+        }
+
+        .gfield_description {
+            min-height: auto;
+        }
+    }
+}

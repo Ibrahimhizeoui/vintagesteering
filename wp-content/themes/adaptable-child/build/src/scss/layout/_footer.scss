@@ -1,0 +1,133 @@
+.site-footer {
+    background: $primary-black;
+    color     : $primary-medium-gray;
+
+    .form-control {
+        &:active,
+        &:focus {
+            background: $white--op70;
+            border    : 1px solid $white--op70;
+            box-shadow: none;
+        }
+    }
+
+    a:hover {
+        color: $primary-white;
+    }
+}
+
+.site-footer-bottom {
+    background: $primary-black;
+    font-size: 0.888888889em;
+    text-align: center;
+    padding: 0.5rem 0;
+    p {
+        margin-bottom: 0;
+        line-height: 2.3;
+    }
+    .social-icons {
+        margin-top: 0.5rem;
+        li a {
+            color: $primary-medium-gray;
+        }
+    }
+
+    .googleTranslate {
+        text-align: left;
+        width: 153px;
+        margin: 0 auto 1em auto;
+
+        .goog-te-gadget-simple {
+            position: relative;
+            width :100%;
+            height: 25px;
+        }
+
+        .goog-te-menu-value {
+            > img {
+                display: none;
+            }
+
+            > span:first-of-type {
+                margin-right: 3px;
+            }
+
+            > span:last-of-type {
+                position: absolute;
+                right: 3px;
+                top: 2px;
+            }
+
+            &:hover {
+                color: $primary-medium-gray;
+            }
+        }
+    }
+
+    @include media($medium-screen-up) {
+        text-align: left;
+
+        .googleTranslate {
+            margin: 6px 1em 0 0;
+            float :left;
+        }
+
+        .footerCopyright {
+            float :left;
+        }
+
+        .social-icons {
+            margin-top: 0;
+            float: right;
+        }
+    }
+}
+
+
+.footer_widget {
+    text-align: center;
+
+
+    a, p {
+        font-size: 0.888888889em;
+        color: $primary-medium-gray;
+    }
+
+    &.widget_newsletter {
+        input[type="email"] {
+            text-indent: 1.25rem;
+        }
+    }
+
+    .widgettitle {
+       border-bottom : none;
+       font-size     : modular-scale(-1);
+       margin-bottom : 0.875rem;
+       color         : $primary-light-gray;
+       text-transform: uppercase;
+   }
+
+   & + .footer_widget  {
+       margin-top: 2rem;
+   }
+
+   @include media($medium-screen-up) {
+        text-align: left;
+
+       &:nth-child(2) {
+           .widgettitle, .menu {
+               max-width: 60%;
+               margin-left: auto;
+               margin-right: auto;
+           }
+       }
+
+       .widgettitle {
+          margin-bottom: 1.875rem;
+      }
+
+       & + .footer_widget  {
+           margin-top: 0
+       }
+   }
+}

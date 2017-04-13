@@ -1,0 +1,60 @@
+@import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails
+
+// Neat Overrides
+// $column: 90px;
+// $gutter: 30px;
+// $grid-columns: 12;
+// $max-width: 1200px;
+
+// ------------------------------------------------------------
+// Override Neat's grid settings
+// ------------------------------------------------------------
+
+$column: golden-ratio(1em, 3) !default; // Column width
+$gutter: golden-ratio(1em, 3) !default; // Gutter between each two columns
+
+// ------------------------------------------------------------
+// Set Bourbon's flex-grid variables to match what Neat is doing
+// http://bourbon.io/docs/#flex-grid
+// ------------------------------------------------------------
+
+$fg-column: $column;
+$fg-gutter: $gutter;
+
+// Neat Breakpoints
+$small-screen     : 17.5em; // 350px
+$small-mid-screen : 25em; // 500px
+$medium-screen    : 38.4em; //768px
+$medium-mid-screen: 49.6em; // 992px
+$large-screen     : 60em; // 1200px
+$xl-screen        : 80em; // 1600px
+$xxl-screen       : 100em; // 2000px
+
+// used for our type mixin
+$breakpoints: (
+    small: $small-screen,
+    medium: $medium-screen,
+    large: $large-screen,
+    xl: $xl-screen
+);
+
+// 4 columns
+$small-screen-up: new-breakpoint(min-width $small-screen 4);
+$small-mid-screen-up: new-breakpoint(min-width $small-mid-screen 4);
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$medium-mid-screen-up: new-breakpoint(min-width $medium-mid-screen 4);
+$small-screen-down: new-breakpoint(max-width ($small-screen - 0.0625em) 4);
+$medium-screen-down: new-breakpoint(max-width ($medium-screen - 0.0625em) 4);
+$medium-mid-screen-down: new-breakpoint(max-width ($medium-mid-screen - 0.0625em) 4);
+
+// 12 columns
+$large-screen-up: new-breakpoint(min-width $large-screen 12);
+$xl-screen-up: new-breakpoint(min-width $xl-screen 12);
+$xxl-screen-up: new-breakpoint(min-width $xxl-screen 12);
+$large-screen-down: new-breakpoint(max-width ($large-screen - 0.0625em) 12);
+$xl-screen-down: new-breakpoint(max-width ($xl-screen - 0.0625em) 12);
+$xxl-screen-down: new-breakpoint(max-width ($xxl-screen - 0.0625em) 12);
+
+// Height Media Queries
+$medium-height-up: new-breakpoint(min-height $medium-screen 4);
+$large-height-up: new-breakpoint(min-height $large-screen 12);

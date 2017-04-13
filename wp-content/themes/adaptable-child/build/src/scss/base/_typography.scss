@@ -1,0 +1,202 @@
+// setup our module scale (major second 1.125)
+$modular-scale-ratio: $major-second;
+$modular-scale-base: 1.125em;
+
+body {
+    color: $base-font-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    width: 100%;
+}
+
+h1,.h1, h2,.h2,
+h3,.h3, h4,.h4,
+h5,.h5, h6,.h6 {
+    font-family: $heading-font-family;
+    font-size: modular-scale(1);
+    line-height: $heading-line-height;
+    margin: 0 0 $small-spacing;
+    color      : $primary-black;
+    font-weight: 400;
+    a {
+        color          : $primary-black;
+        text-decoration: none;
+    }
+}
+
+h1, .h1 {
+    font-size: modular-scale(6.5);
+    line-height: 1.1;
+}
+
+h2, .h2 {
+    font-size: modular-scale(6);
+    line-height: 1.05;
+}
+
+h3, .h3 {
+    font-size: modular-scale(5);
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+h4, .h4 {
+    font-size: modular-scale(4);
+    line-height: 1.15;
+}
+
+h5, .h5 {
+    font-size: modular-scale(3);
+    line-height: 1.1;
+
+}
+
+h6, .h6 {
+    font-size: modular-scale(-1);
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+h2 {
+    small {
+        display       : block;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size     : 45%;
+    }
+}
+
+p {
+    margin: 0 0 $small-spacing;
+    font-weight: 400;
+}
+
+.lighter p {
+    color: $primary-light-gray;
+}
+
+p.small {
+    font-size: modular-scale(-4);
+    color      : $primary-medium-gray;
+    margin-top : 10px;
+}
+
+p.drop-caps {
+  &:first-child:first-letter {
+    float       : left;
+    margin-top  : 5px;
+    margin-right: 5px;
+    padding     : 4px;
+    font-size   : 75px;
+    font-family : $secondary-font-family;
+    line-height : 60px;
+  }
+
+  &.secondary:first-child:first-letter {
+    margin-right : 10px;
+    padding      : 6px 12px;
+    border-radius: 4px;
+    color        : $primary-white;
+  }
+}
+
+a {
+  color: $primary-light-gray;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($primary-light-gray, 25%);
+  }
+}
+
+hr {
+  display      : block;
+  clear        : both;
+  margin-top   : 20px;
+  margin-bottom: 20px;
+  width        : 100%;
+  height       : 1px;
+  border       : 0;
+  background   : $primary-light-gray;
+
+  &.sm {
+    display: inline-block;
+    margin : 0 0 15px;
+    width  : 40px;
+    height : 2px;
+    border : 0;
+  }
+
+  &.md {
+    display: inline-block;
+    margin : 15px 0;
+    width  : 100px;
+    height : 2px;
+    border : 0;
+  }
+
+  &.fw {
+    display      : block;
+    clear        : both;
+    margin-top   : 50px;
+    margin-bottom: 43px;
+    width        : 100%;
+    height       : 1px;
+    border       : 0;
+    background   : $primary-light-gray;
+
+    &.cont {
+      margin: 20px 0;
+    }
+  }
+}
+
+blockquote {
+  margin     : 30px 0;
+  padding    : 0 0 0 30px;
+  font-family: $secondary-font-family;
+  border-left: 3px solid $primary-black;
+
+  p {
+    margin-bottom: 0;
+    white-space  : 1px;
+    color        : $primary-medium-gray;
+    font-size    : 15px;
+  }
+
+  cite {
+    color      : $primary-medium-gray;
+    font-weight: 700;
+    font-family: $base-font-family;
+
+    &:before {
+      content: "- ";
+    }
+  }
+}
+
+strong {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.huge {
+  font-size: 10em;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.big {
+  font-size  : 200%;
+  line-height: 1.5em;
+}
+
+.thin {
+  font-weight: 300;
+}

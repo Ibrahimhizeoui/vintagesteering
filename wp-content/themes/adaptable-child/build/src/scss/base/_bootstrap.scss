@@ -1,0 +1,48 @@
+.row {
+    &--spaced {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        &--plus {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            &--plus {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    @include media($medium-screen-up) {
+        &--spaced {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            &--plus {
+                margin-top: 60px;
+                margin-bottom: 60px;
+                &--plus {
+                    margin-top: 80px;
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
+
+    @include media($large-screen-up) {
+        &--spaced {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            &--plus {
+                margin-top: 80px;
+                margin-bottom: 80px;
+                &--plus {
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                }
+            }
+        }
+    }
+
+    & + .row {
+        margin-top: 0;
+    }
+}

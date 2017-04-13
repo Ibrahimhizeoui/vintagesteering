@@ -1,0 +1,13 @@
+#back-to-top {
+    position     : fixed;
+    right        : 17px;
+    bottom       : 17px;
+    display      : none;
+    text-align   : center;
+    width        : 40px;
+    height       : 40px;
+    line-height  : 40px;
+    border-radius: 3px;
+    background   : $black--op70;
+    color        : $primary-white;
+}

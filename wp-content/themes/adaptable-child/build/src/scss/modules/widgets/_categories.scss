@@ -1,0 +1,16 @@
+.widget_categories {
+    ul {
+    }
+    .cat-item {
+        a {
+            font-family: $secondary-font-family;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: lighten($primary-medium-gray, 20);
+            letter-spacing: 1px;
+        }
+        & + .cat-item {
+            margin-top: 3px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.widget_imic_latest_posts {
+    @include cf;
+
+    > ul {
+        margin-top: 1.5rem;
+    }
+
+    li {
+        > a {
+            width        : 65px;
+            height       : 65px;
+            float        : left;
+        }
+
+        h6 {
+            margin-bottom : 0;
+            letter-spacing: 0;
+            font-size: 80%;
+        }
+
+        .post-actions {
+            .post-date {
+                font-size: 0.666666667em;
+                color: lighten($primary-medium-gray, 20);
+                text-transform: uppercase;
+            }
+        }
+
+        & + li {
+            margin-top: 20px;
+        }
+    }
+}

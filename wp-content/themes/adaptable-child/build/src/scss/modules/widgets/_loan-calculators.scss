@@ -1,0 +1,45 @@
+.calculator-widget {
+    h4 {
+        padding      : 10px 15px;
+        margin-bottom: 0;
+        border-bottom: 1px solid $primary-light-gray;
+    }
+
+    label {
+        display: block;
+        &.checkbox-inline {
+            display    : inline-block;
+            font-weight: 700;
+        }
+    }
+    .loan-amount {
+        font-size  : 30px;
+        font-weight: 700;
+        display    : block;
+        margin-top : 10px;
+
+        small {
+            font-size  : 45%;
+            font-weight: 400;
+            color      : $primary-black;
+        }
+    }
+}
+
+.loan-calculations {
+    @include cf;
+    background: $primary-light-gray;
+    padding   : 15px 15px 0;
+
+    .btn-group .btn {
+        padding-left : 16px;
+        padding-right: 16px;
+    }
+}
+
+.calculations-result {
+    background: $primary-white;
+    padding   : 20px;
+    border-top: 1px solid $primary-light-gray;
+    position  : relative;
+}

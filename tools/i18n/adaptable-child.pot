@@ -1,0 +1,1198 @@
+# Copyright (C) 2016 adaptable
+# This file is distributed under the same license as the Adaptable Child package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Adaptable Child 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/adaptable-child\n"
+"POT-Creation-Date: 2016-06-30 10:46:08+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: archive-plan.php:45
+msgid "Pay Now"
+msgstr ""
+
+#: archive-plan.php:51
+msgid "Log In/Register"
+msgstr ""
+
+#: archive-plan.php:57
+msgid "Create Ad Now"
+msgstr ""
+
+#: archive-plan.php:78 includes/add-listing/plan-(delete).php:58
+msgid "Until Sold"
+msgstr ""
+
+#: archive-plan.php:107
+#: includes/template-parts/modals/modal-deletion-confirmation.php:5
+#: includes/template-parts/modals/modal-search.php:5 template-dashboard.php:815
+#: template-dashboard.php:1739 template-thanks.php:116
+msgid "×"
+msgstr ""
+
+#: archive-plan.php:108 template-dashboard.php:816 template-dashboard.php:1740
+msgid "Payment Information"
+msgstr ""
+
+#: archive-plan.php:117 template-dashboard.php:824 template-dashboard.php:1747
+#: template-thanks.php:124
+msgid "Name"
+msgstr ""
+
+#: archive-plan.php:123 includes/add-listing/step-five.php:51
+#: includes/template-parts/dashboard/profile-tab-personal.php:16
+#: includes/template-parts/modals/modal-make_an_offer.php:31
+#: includes/template-parts/modals/modal-request_testdrive.php:30
+#: includes/template-parts/modals/modal-request_testdrive.php:57
+#: template-dashboard.php:829 template-dashboard.php:1752
+#: template-dashboard.php:1923 template-thanks.php:129
+msgid "Email"
+msgstr ""
+
+#: archive-plan.php:144 template-dashboard.php:849 template-dashboard.php:1772
+msgid "Proceed to Payment"
+msgstr ""
+
+#: includes/acf/gravity-forms-acf/acf-gravity_forms.php:40
+msgid ""
+"Warning: Gravity Forms is not installed or activated. This plugin does not "
+"function without Gravity Forms!"
+msgstr ""
+
+#: includes/acf/gravity-forms-acf/gravity_forms-v4.php:22
+#: includes/acf/gravity-forms-acf/gravity_forms-v5.php:21
+msgid "Gravity Forms"
+msgstr ""
+
+#: includes/acf/gravity-forms-acf/gravity_forms-v4.php:23
+#: includes/acf/gravity-forms-acf/gravity_forms-v5.php:22
+msgid "Relational"
+msgstr ""
+
+#: includes/acf/gravity-forms-acf/gravity_forms-v4.php:61
+msgid "Allow Null?"
+msgstr ""
+
+#: includes/acf/gravity-forms-acf/gravity_forms-v4.php:70
+#: includes/acf/gravity-forms-acf/gravity_forms-v4.php:89
+#: includes/acf/gravity-forms-acf/gravity_forms-v5.php:62
+#: includes/acf/gravity-forms-acf/gravity_forms-v5.php:72
+#: includes/template-parts/modals/modal-make_an_offer.php:55
+msgid "Yes"
+msgstr ""
+
+#: includes/acf/gravity-forms-acf/gravity_forms-v4.php:71
+#: includes/acf/gravity-forms-acf/gravity_forms-v4.php:90
+#: includes/acf/gravity-forms-acf/gravity_forms-v5.php:63
+#: includes/acf/gravity-forms-acf/gravity_forms-v5.php:73
+#: includes/template-parts/modals/modal-make_an_offer.php:56
+msgid "No"
+msgstr ""
+
+#: includes/acf/gravity-forms-acf/gravity_forms-v4.php:80
+msgid "Select multiple values?"
+msgstr ""
+
+#: includes/add-listing/plan-(delete).php:6
+msgid "Ã�"
+msgstr ""
+
+#: includes/add-listing/plan-(delete).php:7
+msgid "Plans"
+msgstr ""
+
+#: includes/add-listing/plan-(delete).php:60
+#: includes/add-listing/step-five.php:74 includes/add-listing/step-one.php:67
+#: includes/template-parts/dashboard/profile-tab-billing.php:28
+#: search-one.php:140 template-dashboard.php:2051 template-listing.php:167
+msgid "Select"
+msgstr ""
+
+#: includes/add-listing/plan-(delete).php:69
+#: includes/template-parts/modals/modal-deletion-confirmation.php:13
+#: includes/template-parts/modals/modal-search.php:31
+msgid "Close"
+msgstr ""
+
+#: includes/add-listing/step-five.php:19
+msgid "Publish Your Listing"
+msgstr ""
+
+#: includes/add-listing/step-five.php:34
+#: includes/template-parts/dashboard/profile-tabs.php:5
+#: template-dashboard.php:1896
+msgid "Billing Info"
+msgstr ""
+
+#: includes/add-listing/step-five.php:40 includes/add-listing/step-five.php:41
+#: includes/template-parts/modals/modal-search.php:13
+msgid "First name"
+msgstr ""
+
+#: includes/add-listing/step-five.php:44 includes/add-listing/step-five.php:45
+#: includes/template-parts/dashboard/profile-tab-personal.php:10
+#: template-dashboard.php:1915
+msgid "Last name"
+msgstr ""
+
+#: includes/add-listing/step-five.php:55
+#: includes/template-parts/dashboard/profile-tab-personal.php:20
+#: includes/template-parts/modals/modal-make_an_offer.php:38
+#: includes/template-parts/modals/modal-request_testdrive.php:36
+#: includes/template-parts/modals/modal-request_testdrive.php:58
+#: template-dashboard.php:1929
+msgid "Phone"
+msgstr ""
+
+#: includes/add-listing/step-five.php:62 includes/add-listing/step-five.php:63
+#: includes/template-parts/dashboard/profile-tab-billing.php:17
+#: includes/template-parts/dashboard/profile-tab-billing.php:18
+#: template-dashboard.php:2028
+msgid "City"
+msgstr ""
+
+#: includes/add-listing/step-five.php:66 includes/add-listing/step-five.php:67
+#: template-dashboard.php:2034
+msgid "Zip"
+msgstr ""
+
+#: includes/add-listing/step-five.php:72
+#: includes/template-parts/dashboard/profile-tab-billing.php:26
+msgid "Select A Country"
+msgstr ""
+
+#: includes/add-listing/step-five.php:111
+msgid "Pay"
+msgstr ""
+
+#: includes/add-listing/step-five.php:111
+msgid "Publish"
+msgstr ""
+
+#: includes/add-listing/step-five.php:116 includes/add-listing/step-four.php:80
+#: includes/add-listing/step-one.php:143
+#: includes/add-listing/step-three.php:179 includes/add-listing/step-two.php:82
+#: template-dashboard.php:265 template-dashboard.php:1202
+msgid "Login/Register"
+msgstr ""
+
+#: includes/add-listing/step-five.php:127
+msgid ""
+"You will be redirected to Paypal secure payment page for the payment which "
+"can be done using your Paypal account or via Credit Card"
+msgstr ""
+
+#: includes/add-listing/step-four.php:12
+msgid "Vehicle Description & Photos"
+msgstr ""
+
+#: includes/add-listing/step-four.php:57
+msgid "Vehicle Description"
+msgstr ""
+
+#: includes/add-listing/step-four.php:62
+msgid "Video Link (optional)"
+msgstr ""
+
+#: includes/add-listing/step-four.php:72
+#: includes/add-listing/step-three.php:172 includes/add-listing/step-two.php:73
+msgid "Save "
+msgstr ""
+
+#: includes/add-listing/step-four.php:74
+#: includes/add-listing/step-three.php:174 includes/add-listing/step-two.php:75
+msgid " continue"
+msgstr ""
+
+#: includes/add-listing/step-one.php:15
+msgid "Search vehicle by Make, Model, Year"
+msgstr ""
+
+#: includes/add-listing/step-one.php:18 includes/add-listing/step-one.php:38
+msgid "Add custom vehicle details"
+msgstr ""
+
+#: includes/add-listing/step-one.php:36 includes/add-listing/step-one.php:139
+msgid "Find"
+msgstr ""
+
+#: includes/add-listing/step-one.php:37
+msgid ""
+"Your listing using the dropdowns below. First select its Make, then Model "
+"and later select its year. "
+msgstr ""
+
+#: includes/add-listing/step-one.php:100 includes/add-listing/step-one.php:267
+#: includes/add-listing/step-one.php:306 includes/add-listing/step-three.php:38
+#: includes/add-listing/step-three.php:79 search-one.php:108
+#: template-listing.php:300
+msgid "Select "
+msgstr ""
+
+#: includes/add-listing/step-one.php:152
+msgid "Searching..."
+msgstr ""
+
+#: includes/add-listing/step-one.php:374
+msgid "Please select category"
+msgstr ""
+
+#: includes/add-listing/step-one.php:382
+msgid "Save"
+msgstr ""
+
+#: includes/add-listing/step-one.php:384
+msgid "continue"
+msgstr ""
+
+#: includes/add-listing/step-three.php:3
+msgid "Tell us more about your listing specific details"
+msgstr ""
+
+#: includes/add-listing/step-three.php:4
+msgid ""
+"Be specific and clear about this details to make your listing selling "
+"quickly."
+msgstr ""
+
+#: includes/add-listing/step-three.php:156
+msgid "How can buyers contact you?"
+msgstr ""
+
+#: includes/add-listing/step-three.php:161
+msgid "Enter Your Phone Number*"
+msgstr ""
+
+#: includes/add-listing/step-three.php:165
+msgid "Enter Your Email Address"
+msgstr ""
+
+#: includes/add-listing/step-two.php:4
+msgid "Select additional features your car have"
+msgstr ""
+
+#: includes/add-listing/step-two.php:5
+msgid "Features selected can either factory fitted or after market features."
+msgstr ""
+
+#: includes/add-listing/steps-sidebar.php:5
+msgid "Ad Completeness"
+msgstr ""
+
+#: includes/add-listing/steps-sidebar.php:15
+msgid "Create Listing"
+msgstr ""
+
+#: includes/add-listing/steps-sidebar.php:21
+msgid "Select Features"
+msgstr ""
+
+#: includes/add-listing/steps-sidebar.php:27
+msgid "Add details"
+msgstr ""
+
+#: includes/add-listing/steps-sidebar.php:33
+msgid "Add photos "
+msgstr ""
+
+#: includes/add-listing/steps-sidebar.php:33
+msgid " comments"
+msgstr ""
+
+#: includes/add-listing/steps-sidebar.php:39
+msgid "Publish Listing"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-billing.php:21
+#: includes/template-parts/dashboard/profile-tab-billing.php:22
+msgid "Zip/Post code"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-change-password.php:6
+#: template-dashboard.php:2072
+msgid "Old Password"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-change-password.php:12
+#: template-dashboard.php:2079
+msgid "New password"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-change-password.php:16
+#: template-dashboard.php:2084
+msgid "Confirm new password"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-personal.php:6
+#: template-dashboard.php:1909
+msgid "First name*"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-personal.php:26
+#: template-dashboard.php:1937
+msgid "Company Name"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-personal.php:30
+#: template-dashboard.php:1941
+msgid "Company Tagline"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-personal.php:35
+#: single-user.php:98 template-dashboard.php:1945
+msgid "Website"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-personal.php:44
+#: includes/template-parts/modals/modal-search.php:18
+#: template-dashboard.php:389 template-dashboard.php:560
+#: template-dashboard.php:1333 template-dashboard.php:1502
+#: template-dashboard.php:1955
+msgid "Description"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-social.php:6
+#: template-dashboard.php:1993
+msgid "Facebook"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-social.php:10
+#: template-dashboard.php:1999
+msgid "Twitter"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-social.php:17
+msgid "Snapchat"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tab-social.php:21
+msgid "Instagram"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tabs.php:3
+#: template-dashboard.php:1892
+msgid "Personal Info"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tabs.php:4
+#: template-dashboard.php:1894
+msgid "Social Info"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tabs.php:6
+#: includes/template-parts/modals/modal-payment.php:107
+#: template-dashboard.php:1898
+msgid "Change Password"
+msgstr ""
+
+#: includes/template-parts/dashboard/profile-tabs.php:25
+#: template-dashboard.php:2093
+msgid "Update details"
+msgstr ""
+
+#: includes/template-parts/header/adp_user_login.php:12
+#: includes/template-parts/header/adp_user_login.php:37
+#: includes/template-parts/header/adp_user_login.php:43
+msgid "Login/Signup"
+msgstr ""
+
+#. #-#-#-#-#  adaptable-child.pot (Adaptable Child 0.1)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: includes/template-parts/header/adp_user_login.php:49
+#: template-dashboard.php:276 template-dashboard.php:1213
+#: template-dashboard.php:1305
+msgid "Dashboard"
+msgstr ""
+
+#: includes/template-parts/header/adp_user_login.php:50
+#: template-dashboard.php:285 template-dashboard.php:671
+#: template-dashboard.php:1221 template-dashboard.php:1612
+msgid "Saved Searches"
+msgstr ""
+
+#: includes/template-parts/header/adp_user_login.php:51
+msgid "Saved Listings"
+msgstr ""
+
+#: includes/template-parts/header/adp_user_login.php:52
+#: template-dashboard.php:304 template-dashboard.php:1245
+msgid "Manage Ads"
+msgstr ""
+
+#: includes/template-parts/header/adp_user_login.php:53
+msgid "My Profile"
+msgstr ""
+
+#: includes/template-parts/header/adp_user_login.php:54
+#: template-dashboard.php:323 template-dashboard.php:1270
+msgid "Log Out"
+msgstr ""
+
+#: includes/template-parts/listings/tool-box.php:17
+#: includes/template-parts/listings/tool-box.php:213
+#: includes/template-parts/listings/vehicle-standard_content.php:117
+msgid "View all"
+msgstr ""
+
+#: includes/template-parts/listings/tool-box.php:20
+msgid "Saved cars"
+msgstr ""
+
+#: includes/template-parts/listings/tool-box.php:73
+msgid "No saved searches"
+msgstr ""
+
+#: includes/template-parts/listings/tool-box.php:186
+#: includes/template-parts/listings/tool-box.php:275
+msgid "Please login/register to add more"
+msgstr ""
+
+#: includes/template-parts/listings/tool-box.php:189
+msgid "No Saved Cars yet"
+msgstr ""
+
+#. #-#-#-#-#  adaptable-child.pot (Adaptable Child 0.1)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: includes/template-parts/listings/tool-box.php:200
+#: includes/template-parts/listings/tool-box.php:420 template-dashboard.php:649
+#: template-dashboard.php:1589
+msgid "Compare"
+msgstr ""
+
+#: includes/template-parts/listings/tool-box.php:216
+msgid "Saved searches"
+msgstr ""
+
+#: includes/template-parts/listings/tool-box.php:236
+#: includes/template-parts/listings/tool-box.php:280
+msgid "No Saved Searches Yet"
+msgstr ""
+
+#: includes/template-parts/listings/tool-box.php:271
+msgid "No saved searches yet"
+msgstr ""
+
+#: includes/template-parts/listings/tool-box.php:297
+msgid "Recently viewed cars"
+msgstr ""
+
+#: includes/template-parts/listings/tool-box.php:304
+msgid "You do not have any viewed listings yet"
+msgstr ""
+
+#: includes/template-parts/modals/modal-deletion-confirmation.php:6
+msgid "Delete Selected Items"
+msgstr ""
+
+#: includes/template-parts/modals/modal-deletion-confirmation.php:9
+msgid "Are you really wants to delete"
+msgstr ""
+
+#: includes/template-parts/modals/modal-deletion-confirmation.php:12
+msgid "Delete"
+msgstr ""
+
+#: includes/template-parts/modals/modal-make_an_offer.php:11
+#: includes/template-parts/modals/modal-make_an_offer.php:19
+msgid "Make an offer"
+msgstr ""
+
+#: includes/template-parts/modals/modal-make_an_offer.php:15
+#: includes/template-parts/modals/modal-request_testdrive.php:16
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis "
+"egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. "
+"Donec vel mauris quam."
+msgstr ""
+
+#: includes/template-parts/modals/modal-make_an_offer.php:24
+#: includes/template-parts/modals/modal-request_testdrive.php:24
+msgid "Full Name"
+msgstr ""
+
+#: includes/template-parts/modals/modal-make_an_offer.php:47
+msgid "Offered Price"
+msgstr ""
+
+#: includes/template-parts/modals/modal-make_an_offer.php:54
+msgid "Financing required?"
+msgstr ""
+
+#: includes/template-parts/modals/modal-make_an_offer.php:62
+msgid "Additional comments"
+msgstr ""
+
+#: includes/template-parts/modals/modal-make_an_offer.php:63
+#: includes/template-parts/modals/modal-send_to_friend.php:38
+#: template-thanks.php:147
+msgid "Submit"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:6
+msgid "Login or Register for website"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:12
+msgid "Login"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:13
+msgid "Register"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:14
+#: includes/template-parts/modals/modal-payment.php:104
+msgid "Reset Password"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:29
+msgid "Username"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:34
+msgid "Password"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:39
+msgid "Remember Me!"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:43
+msgid "Login Now"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:82
+#: includes/template-parts/modals/modal-payment.php:83
+msgid "Email Address"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:87
+#: includes/template-parts/modals/modal-payment.php:88
+msgid "Please insert verification code"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:93
+#: includes/template-parts/modals/modal-payment.php:94
+msgid "Enter Password"
+msgstr ""
+
+#: includes/template-parts/modals/modal-payment.php:98
+#: includes/template-parts/modals/modal-payment.php:99
+msgid "Enter Password Again"
+msgstr ""
+
+#: includes/template-parts/modals/modal-request_testdrive.php:11
+msgid "Book a test drive"
+msgstr ""
+
+#: includes/template-parts/modals/modal-request_testdrive.php:44
+msgid "Preferred Date"
+msgstr ""
+
+#: includes/template-parts/modals/modal-request_testdrive.php:50
+msgid "Preferred time"
+msgstr ""
+
+#: includes/template-parts/modals/modal-request_testdrive.php:55
+msgid "Schedule Now"
+msgstr ""
+
+#: includes/template-parts/modals/modal-request_testdrive.php:56
+msgid "Preferred Contact"
+msgstr ""
+
+#: includes/template-parts/modals/modal-requestinfo.php:19
+msgid "Contact The Seller"
+msgstr ""
+
+#: includes/template-parts/modals/modal-search.php:6
+#: includes/template-parts/modals/modal-search.php:30
+msgid "Save Search"
+msgstr ""
+
+#: includes/template-parts/modals/modal-send_to_friend.php:6
+#: single-cars.php:171 single-cars.php:172
+msgid "Send To A Friend"
+msgstr ""
+
+#: includes/template-parts/modals/modal-send_to_friend.php:10
+msgid ""
+"Want to send this to a friend? We've got you covered, just fill the form out "
+"below and we'll handle the rest!"
+msgstr ""
+
+#: includes/template-parts/modals/modal-send_to_friend.php:19
+msgid "Friends Email"
+msgstr ""
+
+#: includes/template-parts/modals/modal-send_to_friend.php:27
+msgid "Your Email"
+msgstr ""
+
+#: includes/template-parts/modals/modal-send_to_friend.php:32
+msgid "Your Name"
+msgstr ""
+
+#: includes/template-parts/single-listing/single-listing-vehicle-header.php:52
+#: single-user.php:102
+msgid "Request more info"
+msgstr ""
+
+#: includes/template-parts/single-listing/single-listing-vehicle-header.php:53
+#: single-user.php:103
+msgid "Contact Seller"
+msgstr ""
+
+#: includes/template-parts/single-listing/single-listing-vehicle-images.php:37
+msgid "Premium listing"
+msgstr ""
+
+#: includes/theme/adp-single_listing-related_listings.php:98
+msgid "Related Listings"
+msgstr ""
+
+#: index.php:81 template-blog.php:72 template-blog.php:118
+msgid "No Posts to display"
+msgstr ""
+
+#: search-one.php:119
+msgid "Please select search fields from Theme Options"
+msgstr ""
+
+#: search-one.php:127
+msgid "Enter Keyword"
+msgstr ""
+
+#: search-one.php:128
+msgid "Keyword"
+msgstr ""
+
+#: search-one.php:138 template-listing.php:165 template-listing.php:191
+msgid "Select Category"
+msgstr ""
+
+#: search-one.php:147
+msgid "Loading Child Field..."
+msgstr ""
+
+#: search-one.php:155
+msgid "Search Cars"
+msgstr ""
+
+#: single-cars.php:76
+msgid "Vehicle might be sold or not active"
+msgstr ""
+
+#: single-cars.php:165 single-cars.php:166
+msgid "Save this listing"
+msgstr ""
+
+#: single-cars.php:216
+msgid "Sorry This page doesn't exist"
+msgstr ""
+
+#: single-user.php:79
+msgid "Member since"
+msgstr ""
+
+#: single-user.php:80
+msgid "Listings"
+msgstr ""
+
+#: single-user.php:155
+msgid "Our Recently Listed Vehicles"
+msgstr ""
+
+#: single-user.php:189
+msgid "No comments yet"
+msgstr ""
+
+#: single-user.php:189
+msgid "Comments are off for this post"
+msgstr ""
+
+#: single-user.php:193 template-blog.php:104
+msgid "Continue reading"
+msgstr ""
+
+#: single-user.php:194 template-blog.php:107
+msgid "Posted in:"
+msgstr ""
+
+#: template-add-listing.php:15
+msgid "Please select payment plan"
+msgstr ""
+
+#: template-add-listing.php:16
+msgid "Successfully Saved."
+msgstr ""
+
+#: template-add-listing.php:17
+msgid "Please upload images."
+msgstr ""
+
+#: template-add-listing.php:18
+msgid "Please complete previous tabs."
+msgstr ""
+
+#: template-add-listing.php:425 template-add-listing.php:440
+#: template-compare.php:183 template-dashboard.php:2114
+#: template-dashboard.php:2147 template-listing.php:744
+msgid "Sorry"
+msgstr ""
+
+#: template-add-listing.php:427
+msgid "You do not have rights to ad listing."
+msgstr ""
+
+#: template-add-listing.php:428
+msgid ""
+"Please register with another role which have sufficient rights to ad listing."
+msgstr ""
+
+#: template-add-listing.php:442 template-compare.php:185
+#: template-dashboard.php:2116 template-dashboard.php:2149
+#: template-listing.php:746
+msgid "Sorry - Plugin not active"
+msgstr ""
+
+#: template-add-listing.php:443 template-compare.php:186
+#: template-dashboard.php:2117 template-dashboard.php:2150
+#: template-listing.php:747
+msgid "Please install and activate required plugins of theme."
+msgstr ""
+
+#: template-compare.php:113
+msgid "This vehicle might be sold or not active"
+msgstr ""
+
+#: template-compare.php:132
+msgid "Vehicle details"
+msgstr ""
+
+#: template-compare.php:139
+msgid "Additional Options"
+msgstr ""
+
+#: template-compare.php:167
+msgid "View listing"
+msgstr ""
+
+#: template-compare.php:174
+msgid "You have not selected any listing to compare."
+msgstr ""
+
+#: template-dashboard.php:166 template-dashboard.php:1125
+#: template-thanks.php:47
+msgid "Not Verified"
+msgstr ""
+
+#: template-dashboard.php:264 template-dashboard.php:1201
+msgid "Login or Register to access this page"
+msgstr ""
+
+#: template-dashboard.php:272 template-dashboard.php:1209
+msgid "New Ad listing"
+msgstr ""
+
+#: template-dashboard.php:295 template-dashboard.php:551
+#: template-dashboard.php:1230 template-dashboard.php:1492
+msgid "Saved Cars"
+msgstr ""
+
+#: template-dashboard.php:311 template-dashboard.php:1252
+msgid "Plans Subscribed"
+msgstr ""
+
+#: template-dashboard.php:336 template-dashboard.php:1281
+msgid ""
+"Thanks for submiting your listing. You can visit dashboard for further "
+"reference"
+msgstr ""
+
+#: template-dashboard.php:343 template-dashboard.php:1287
+msgid "successfully added listing."
+msgstr ""
+
+#: template-dashboard.php:344 template-dashboard.php:1288
+msgid " has added Ad listing."
+msgstr ""
+
+#: template-dashboard.php:345 template-dashboard.php:1289
+msgid "Name: "
+msgstr ""
+
+#: template-dashboard.php:346 template-dashboard.php:1290
+msgid "Email: "
+msgstr ""
+
+#: template-dashboard.php:347 template-dashboard.php:1291
+msgid "Ad: "
+msgstr ""
+
+#: template-dashboard.php:378 template-dashboard.php:1320
+msgid "See all Ads "
+msgstr ""
+
+#: template-dashboard.php:382
+msgid "Recently Listed"
+msgstr ""
+
+#: template-dashboard.php:390 template-dashboard.php:561
+#: template-dashboard.php:1334 template-dashboard.php:1503
+msgid "Price/Status"
+msgstr ""
+
+#: template-dashboard.php:391 template-dashboard.php:683
+#: template-dashboard.php:1335 template-dashboard.php:1504
+#: template-dashboard.php:1624 template-dashboard.php:1682
+msgid "Created On"
+msgstr ""
+
+#: template-dashboard.php:392 template-dashboard.php:1336
+msgid "Payment"
+msgstr ""
+
+#: template-dashboard.php:405 template-dashboard.php:1348
+msgid "Pending Payment"
+msgstr ""
+
+#: template-dashboard.php:409 template-dashboard.php:1351
+msgid "Active"
+msgstr ""
+
+#: template-dashboard.php:413 template-dashboard.php:1354
+msgid "Sold"
+msgstr ""
+
+#: template-dashboard.php:417 template-dashboard.php:1357
+msgid "Inactive"
+msgstr ""
+
+#: template-dashboard.php:421 template-dashboard.php:1360
+msgid "Under Review"
+msgstr ""
+
+#: template-dashboard.php:513 template-dashboard.php:629
+#: template-dashboard.php:701 template-dashboard.php:1449
+#: template-dashboard.php:1571 template-dashboard.php:1643
+msgid " @ "
+msgstr ""
+
+#: template-dashboard.php:527 template-dashboard.php:647
+#: template-dashboard.php:718 template-dashboard.php:1463
+#: template-dashboard.php:1586 template-dashboard.php:1657
+msgid "Delete Selected"
+msgstr ""
+
+#: template-dashboard.php:532 template-dashboard.php:1325
+#: template-dashboard.php:1468
+msgid "My Ad Listings"
+msgstr ""
+
+#: template-dashboard.php:535 template-dashboard.php:1472
+msgid "You have not created any Ads yet."
+msgstr ""
+
+#: template-dashboard.php:547 template-dashboard.php:1487
+msgid "See all cars "
+msgstr ""
+
+#: template-dashboard.php:562
+msgid "Saved On"
+msgstr ""
+
+#: template-dashboard.php:653 template-dashboard.php:1593
+msgid "You don't have any saved listing in your dashboard"
+msgstr ""
+
+#: template-dashboard.php:668 template-dashboard.php:1607
+msgid "See all searches "
+msgstr ""
+
+#: template-dashboard.php:680 template-dashboard.php:1621
+msgid "Custom search name"
+msgstr ""
+
+#: template-dashboard.php:681 template-dashboard.php:1622
+msgid "Details"
+msgstr ""
+
+#: template-dashboard.php:682 template-dashboard.php:1623
+#: template-dashboard.php:1681
+msgid "Receive alerts"
+msgstr ""
+
+#: template-dashboard.php:698 template-dashboard.php:1568
+#: template-dashboard.php:1641
+msgid "Saved on"
+msgstr ""
+
+#: template-dashboard.php:721 template-dashboard.php:1659
+msgid "You don't have any saved searches in your dashboard"
+msgstr ""
+
+#: template-dashboard.php:734
+msgid "Your Plans"
+msgstr ""
+
+#: template-dashboard.php:735
+msgid ""
+"Plans you have subscribed to are listed below, If you want to add more "
+"listings you can click the <strong>refresh</strong> symbol below and proceed "
+"to payment"
+msgstr ""
+
+#: template-dashboard.php:736
+msgid ""
+"Alternatively you can select the \"+\" button and proceed to adding a new "
+"listing!"
+msgstr ""
+
+#: template-dashboard.php:745 template-dashboard.php:1679
+msgid "Plan name"
+msgstr ""
+
+#: template-dashboard.php:746
+msgid "Balance Listings"
+msgstr ""
+
+#: template-dashboard.php:747
+msgid "Plan Expires"
+msgstr ""
+
+#: template-dashboard.php:748 template-dashboard.php:1337
+#: template-dashboard.php:1505
+msgid "Actions"
+msgstr ""
+
+#: template-dashboard.php:761 template-dashboard.php:1692
+msgid " Listings"
+msgstr ""
+
+#: template-dashboard.php:761 template-dashboard.php:1692
+msgid " Listing"
+msgstr ""
+
+#. #-#-#-#-#  adaptable-child.pot (Adaptable Child 0.1)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: template-dashboard.php:789 template-dashboard.php:1715
+msgid "Add Listing"
+msgstr ""
+
+#: template-dashboard.php:793 template-dashboard.php:1719
+msgid "Renew Plan"
+msgstr ""
+
+#: template-dashboard.php:869 template-dashboard.php:1795
+msgid "You don't have any subscribed plans."
+msgstr ""
+
+#: template-dashboard.php:907 template-dashboard.php:1832
+msgid "Please fill first name"
+msgstr ""
+
+#: template-dashboard.php:911 template-dashboard.php:1835
+msgid "Please fill zip code"
+msgstr ""
+
+#: template-dashboard.php:946 template-dashboard.php:954
+#: template-dashboard.php:1865 template-dashboard.php:1873
+msgid "Profile Updated Successfully"
+msgstr ""
+
+#: template-dashboard.php:949 template-dashboard.php:1868
+msgid "Please confirm password again"
+msgstr ""
+
+#: template-dashboard.php:1237
+msgid "Create new Ad"
+msgstr ""
+
+#: template-dashboard.php:1264
+msgid "Account Settings"
+msgstr ""
+
+#: template-dashboard.php:1671
+msgid "Plan Subscribed"
+msgstr ""
+
+#: template-dashboard.php:1680
+msgid "Balace Listings"
+msgstr ""
+
+#: template-dashboard.php:1713
+msgid "Expires on "
+msgstr ""
+
+#: template-dashboard.php:1970
+msgid "Banner Image"
+msgstr ""
+
+#: template-dashboard.php:1979
+msgid "Company/User Image"
+msgstr ""
+
+#: template-dashboard.php:2007
+msgid "Google Plus"
+msgstr ""
+
+#: template-dashboard.php:2013
+msgid "Pinterest"
+msgstr ""
+
+#: template-dashboard.php:2048
+msgid "Select State"
+msgstr ""
+
+#: template-home.php:82
+msgid "All Manufacturers"
+msgstr ""
+
+#: template-listing.php:108
+msgid "Refine Search"
+msgstr ""
+
+#: template-listing.php:192
+msgid "Loading..."
+msgstr ""
+
+#: template-listing.php:218
+msgid "Less Than "
+msgstr ""
+
+#: template-listing.php:260
+msgid "Filter"
+msgstr ""
+
+#: template-listing.php:337
+msgid "Deep Search"
+msgstr ""
+
+#: template-listing.php:351
+msgid "Save search"
+msgstr ""
+
+#: template-listing.php:353
+msgid "Reset"
+msgstr ""
+
+#: template-listing.php:371
+msgid "Sort by"
+msgstr ""
+
+#: template-listing.php:374
+msgid "Toggle Dropdown"
+msgstr ""
+
+#: template-listing.php:384
+msgid "DESC"
+msgstr ""
+
+#: template-listing.php:386
+msgid " (High to Low)"
+msgstr ""
+
+#: template-listing.php:392
+msgid "ASC"
+msgstr ""
+
+#: template-listing.php:394
+msgid " (Low to High)"
+msgstr ""
+
+#: template-listing.php:407
+msgid "Search Filters"
+msgstr ""
+
+#: template-listing.php:725
+msgid "Sorry - No listing found for this criteria"
+msgstr ""
+
+#: template-listing.php:726
+msgid "Please search again with different filters."
+msgstr ""
+
+#. #-#-#-#-#  adaptable-child.pot (Adaptable Child 0.1)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: template-thanks.php:87
+msgid "Thank You"
+msgstr ""
+
+#: template-thanks.php:90
+msgid "Payment "
+msgstr ""
+
+#: template-thanks.php:91
+msgid "Your payment status is "
+msgstr ""
+
+#: template-thanks.php:94
+msgid "Ad Listing"
+msgstr ""
+
+#: template-thanks.php:96
+msgid "View Listings"
+msgstr ""
+
+#: template-thanks.php:99 template-thanks.php:117
+msgid "Contact "
+msgstr ""
+
+#: template-thanks.php:134
+msgid "Message"
+msgstr ""
+
+#: template-thanks.php:138
+msgid ""
+"Your Payment Details and status will be forwarded to site manager, manager "
+"would try to contact you shortly"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Adaptable Child"
+msgstr ""
+
+#. #-#-#-#-#  adaptable-child.pot (Adaptable Child 0.1)  #-#-#-#-#
+#. Theme URI of the plugin/theme
+#. #-#-#-#-#  adaptable-child.pot (Adaptable Child 0.1)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://weareadaptable.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adaptable Child Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "adaptable"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blog"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Contact"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Home"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "How It Works"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Listing"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Search"
+msgstr ""

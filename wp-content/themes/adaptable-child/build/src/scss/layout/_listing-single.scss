@@ -1,0 +1,22 @@
+.single-listing {
+
+}
+
+.single-listing-images {
+
+}
+
+.vehicle-single-information {
+    &.row {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+// page modules
+@import "../modules/single-listing/header";
+@import "../modules/single-listing/images";
+@import "../modules/single-listing/tab-switcher";
+@import "../modules/single-listing/sharing";
+@import "../modules/single-listing/specifications";
+@import "../modules/single-listing/related-listings";

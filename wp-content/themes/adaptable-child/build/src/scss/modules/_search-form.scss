@@ -1,0 +1,38 @@
+.srchFrm {
+    &__inner {
+        @extend %clearfix;
+        background-color: $primary-cream;
+        box-shadow: none;
+        padding: 1.111111111rem;
+        border-radius: 0;
+    }
+
+    &__row {
+        & + & {
+            margin-top: 3.333333333rem;
+        }
+    }
+
+    &__fields {
+        @extend %clearfix;
+    }
+
+    &__field {
+        padding: 0 5px;
+        label {
+            @include screen-reader-text;
+        }
+    }
+
+    &__submission {
+        padding: 0 5px;
+        input[type="submit"] {
+            @extend %button--alternate;
+        }
+    }
+}
+
+.SinglePageSearch {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}

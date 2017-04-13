@@ -1,0 +1,143 @@
+/**
+ * Comments to make these partials clearer
+ * This file contains styles for the following aspects
+ * ---------------------------------------------------
+ * - Product Listing Grid
+ *     - list/gridview
+ *     - items per page
+ *     - sort by functionality
+ *     - favourites / saved searches / recently viewed
+ */
+
+.search-filters {
+    margin-bottom: 2em;
+
+    .act-cat {
+        padding: 0 13px;
+    }
+
+    .accordion-inner {
+        background: none;
+        padding: 0;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .accordion-heading {
+        &.accordionize .accordion-toggle i,
+        &.togglize .accordion-toggle i {
+            right: 0;
+        }
+
+        &.accordionize .accordion-toggle.active,
+        &.togglize .accordion-toggle.active,
+        .accordion-toggle.active {
+            color     : $primary-medium-gray;
+            background: none;
+        }
+
+        &:hover .accordion-toggle.active {
+            color     : $primary-medium-gray;
+            background: none;
+            &:hover {
+                color     : $primary-medium-gray;
+                background: none;
+            }
+        }
+
+        &.accordionize .accordion-toggle.active i,
+        &.togglize .accordion-toggle.active i {
+          color: $primary-medium-gray;
+        }
+    }
+
+    &__saving {
+        display: inline-block;
+        text-decoration: none;
+        font-family: $base-font-family;
+        font-size: 0.777777778em;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        & + & {
+            margin-left: 1.5rem;
+        }
+
+        &.link--green {
+            border-bottom: 1px solid $primary-green;
+            &:hover {
+                border-bottom-color: darken($primary-green, 5);
+            }
+        }
+
+        &.link--red {
+            border-bottom: 1px solid saturate($primary-red, 20);
+            &:hover {
+                border-bottom-color: saturate($primary-red, 10);
+            }
+        }
+    }
+}
+
+.filters-sidebar {
+    .accordion > .accordion-group.panel:last-child {
+        border-bottom: none;
+    }
+}
+
+.filters-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.filter-options-list {
+    &.list-group {
+        margin         : 0;
+        list-style-type: none;
+        padding        : 0;
+        box-shadow     : none;
+        border         : 0;
+    }
+
+    li {
+        padding: 0;
+        border : 0;
+        background: none;
+        i {
+            color: $primary-light-gray;
+        }
+    }
+    &.color-options .badge {
+        width     : 15px;
+        height    : 15px;
+        display   : block;
+        margin-top: 3px;
+    }
+}
+
+.color-options .badge {
+    &.car-color-white {
+        background: $car--white;
+        border    : 1px solid $primary-light-gray;
+    }
+
+    &.car-color-black { background: $car--black; }
+    &.car-color-red { background: $car--red; }
+    &.car-color-yellow { background: $car--yellow; }
+    &.car-color-brown { background: $car--brown; }
+    &.car-color-grey { background: $car--grey; }
+    &.car-color-silver { background: $car--silver; }
+    &.car-color-gold { background: $car--gold; }
+    &.car-color-blue { background: $car--blue; }
+    &.car-color-green { background: $car--green; }
+    &.car-color-orange { background: $car--orange; }
+}
+
+.get-child-cat {
+    .dropdown-menu li.disabled {
+        display: none;
+    }
+}

@@ -1,0 +1,27 @@
+.homeContent {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__cmsContent {
+        p {
+            margin-bottom: 0;
+        }
+        p + p {
+            margin-top: 1rem;
+        }
+
+        margin-bottom: 2rem;
+    }
+
+    h3.spaced {
+        margin-bottom: 2rem;
+    }
+
+    @include media($medium-mid-screen-up) {
+        &__cmsContent {
+            margin-bottom: 0;
+        }
+    }
+}

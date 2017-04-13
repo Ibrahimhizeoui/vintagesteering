@@ -1,0 +1,158 @@
+// Also referred to on site as "Magazine"
+
+// Generic blog items
+
+
+.posts-grid {
+    @include cf;
+    @include pad(0);
+    margin         : 0;
+    list-style-type: none;
+
+    .grid-item {
+        // margin-bottom: 3%;
+    }
+
+    .media-box {
+        height: 225px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@include media($medium-screen-up) {
+    .posts-grid {
+        &.col-2 .grid-item {
+            width: 47%;
+        }
+
+        &.col-3 .grid-item {
+            @include span-columns(4 of 12);
+            @include omega(3n);
+        }
+
+        &.col-4 .grid-item {
+            width: 21.5%;
+        }
+    }
+}
+
+.grid-media {
+    position: relative;
+}
+
+.grid-content {}
+
+.grid-footer {
+    padding   : 5px 20px 1px 0;
+}
+
+// blog specific
+.blog-item {
+    .grid-item-inner {
+        background: $primary-white;
+    }
+}
+
+// posts grid
+.posts-grid {
+    .post-title {
+        @extend h5;
+        padding-bottom: 15px;
+        a {
+            font-size :inherit;
+        }
+    }
+    .post-date {
+        font-size: 0.888888889em;
+        text-transform: uppercase;
+        margin-top: 5px;
+        color: darken($primary-light-gray, 10);
+    }
+    .post-text {
+        color: lighten($primary-medium-gray, 10);
+        font-size: 0.888888889em;
+    }
+}
+
+.related-posts-grid {
+    @include pad(1.75rem 0 6.25rem 0);
+    background-color: $primary-light-gray;
+
+    .listing-header {
+
+    }
+}
+
+// gallery grid
+.gallery-grid {
+    .post-title {
+        padding      : 0 0 20px;
+        border-bottom: 1px solid $primary-light-gray;
+    }
+}
+
+// blog item
+.blog-item {
+    .grid-footer {
+        padding   : 10px 20px;
+        background: $primary-light-gray;
+
+        .meta-data {
+            margin-top: 4px;
+        }
+    }
+}
+
+
+.grid-item {
+    &.event-item .action-buttons {
+        margin-top: 0;
+    }
+}
+
+#message, .message {
+  margin-top: 20px;
+}
+
+// archive
+.posts-archive {
+    .post {
+        margin-bottom : 40px;
+        padding-bottom: 35px;
+        border-bottom : 1px solid $primary-light-gray;
+
+        .img-thumbnail {
+            margin-top: 7px;
+        }
+        .post-actions {
+            border-bottom : 1px solid $primary-light-gray;
+            padding-bottom: 5px;
+        }
+
+        .post-title {
+            border-bottom : 1px solid $primary-light-gray;
+            padding-bottom: 12px;
+        }
+        .post-meta {
+            font-size: 12px;
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.isotope-grid {
+    margin : 0;
+    list-style-type: none;
+}
+
+.isotope-events {
+    .grid-item.event-list-item {
+        margin-bottom: 0;
+        margin-top   : 0;
+    }
+}

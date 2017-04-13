@@ -1,0 +1,46 @@
+// Custom parent div/class to overwrite theme if need
+// .paginationGroup {}
+
+// Theme Pagination Class
+.pagination {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    > li {
+        &:last-child > a,
+        &:first-child > a {
+            border-radius: 0;
+        }
+
+        // &:first-child > a {}
+        // &:last-child > a {}
+
+        > a, > span  {
+            padding: 6px 12px;
+            border: 1px solid darken($primary-light-gray, 10);
+            background-color: $primary-light-gray;
+
+            &:hover, &:focus {
+                border: 1px solid darken($primary-light-gray, 15);
+                background-color: darken($primary-light-gray, 5);
+            }
+        }
+
+        + li {
+            > a, > span {
+                margin-left: 0.5rem;
+            }
+        }
+
+        &.active {
+            > span, > a {
+                background-color: $primary-green;
+                border-color: $primary-green;
+
+                &:hover, &:focus {
+                    background-color: darken($primary-green, 5);
+                    border-color: darken($primary-green, 5);
+                }
+            }
+        }
+    }
+}

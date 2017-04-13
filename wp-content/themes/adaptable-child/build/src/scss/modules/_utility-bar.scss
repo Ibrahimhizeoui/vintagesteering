@@ -1,0 +1,27 @@
+.utility-bar {
+    background: $primary-light-gray;
+    min-height: 40px;
+    height    : auto;
+    position  : relative;
+    z-index   : 555;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .utility-bar .share-text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .utility-bar .share-text {
+        display: none;
+    }
+}
+
+.breadcrumb {
+    padding: 10px 0;
+    span {
+        text-transform: uppercase;
+        font-family: $secondary-font-family;
+    }
+}

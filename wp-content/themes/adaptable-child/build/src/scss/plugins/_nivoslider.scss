@@ -1,0 +1,23 @@
+.nivoslider {
+  box-shadow   : none !important;
+  margin-bottom: 0 !important;
+  position     : relative;
+  z-index      : 1;
+  display      : none;
+}
+
+.nivo-directionNav a {
+  top: 45% !important;
+}
+
+.nivo-controlNav {
+  width   : 100%;
+  z-index : 2;
+  position: absolute;
+  bottom  : 10px;
+}
+
+.nivo-caption {
+  background: $black--op70;
+  text-align: center;
+}

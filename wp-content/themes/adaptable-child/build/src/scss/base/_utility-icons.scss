@@ -1,0 +1,61 @@
+.utility-icons {
+    margin         : 0;
+    list-style-type: none;
+    float          : right;
+
+    > li {
+        float       : left;
+        margin-left : 1px;
+        margin-right: 0;
+        position    : relative;
+
+        > a {
+            width        : 35px;
+            height       : 35px;
+            line-height  : 35px;
+            font-size    : 17px;
+            color        : $primary-medium-gray;
+            background   : $primary-white;
+            display      : block;
+            text-align   : center;
+            border-radius: 0;
+            border: 1px solid lighten($primary-medium-gray, 30);
+            transition: background $base-duration $base-timing;
+
+            [class*=" icon-"]:before,
+            [class^="icon-"]:before {
+                line-height: 42px;
+            }
+        }
+
+        &.search > a {
+            color: $primary-white;
+        }
+
+        &:hover > a,
+        > a:hover {
+            color        : lighten($primary-black, 20);
+        }
+
+        & + li {
+            margin-left: 0.5rem;
+        }
+    }
+
+    &.social-icons {
+      float: left;
+    }
+
+    &--wide {
+        > li a {
+            font-size: 0.777777778em;
+            width: 55px;
+            height: 35px;
+            line-height: 35px;
+        }
+    }
+}
+
+#Search-Filters .utility-icons.tools-bar {
+  display: none;
+}

@@ -1,0 +1,82 @@
+{
+    "key": "group_573323c07cac2",
+    "title": "Email Marketing",
+    "fields": [
+        {
+            "key": "field_573323c987811",
+            "label": "Mailchimp",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5733257587813",
+            "label": "Form Action URL",
+            "name": "em_form_action_url",
+            "type": "text",
+            "instructions": "This is the url of the mailing list embed form where you want your users emails to be sent to.\r\n<br\/><br\/>\r\nTo get this follow these steps.<br \/>\r\n1. Login to mailchimp and navigate to the <strong>list<\/strong> you will be using.<br \/>\r\n2. Click <strong>Signup Forms<\/strong><br \/>\r\n3. Click <strong>Embedded Forms<\/strong><br \/>\r\n4. Select the \"<strong>Naked<\/strong>\" tab here<br \/>\r\n5. Under \"<strong>Copy\/paste onto your site<\/strong>\" you need to grab everything inside the <form <strong>action=\"\"<\/strong> attribute.<br \/><br \/>\r\n\r\nFor example out of the following:<br\/>\r\nform action=\"\/\/listname.us11.list-manage.com\/subscribe\/post?u=4c689ebbaa685082aa5141f7a&amp;id=5eed3240aa\"\r\n\r\n<br \/><br\/>\r\nYou would need to copy into this field:<br\/>\r\n\/\/listname.us11.list-manage.com\/subscribe\/post?u=4c689ebbaa685082aa5141f7a&amp;id=5eed3240aa",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5733278030c2c",
+            "label": "Form Title",
+            "name": "em_form_title",
+            "type": "text",
+            "instructions": "This is the title that will appear above the signup form.\r\n<br\/>\r\n(e.g, Signup to our newsletter for latest updates!)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-marketing-details"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1462970854
+}

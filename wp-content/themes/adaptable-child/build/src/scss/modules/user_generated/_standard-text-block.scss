@@ -1,0 +1,10 @@
+.standardTextBlock {
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin-top: 1em;
+        color: $primary-medium-gray;
+    }
+}

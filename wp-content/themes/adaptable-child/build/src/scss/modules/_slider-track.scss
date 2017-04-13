@@ -1,0 +1,49 @@
+.slider-label {
+    font-size: 0.888888889rem;
+    display: block;
+    text-indent: 1rem;
+    color: $primary-medium-gray;
+    margin-top: 0.25rem;
+    margin-bottom: 10px;
+}
+
+.slider-horizontal {
+    width: 91% !important;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+}
+
+.slider-track {
+    @include linear-gradient(darken($primary-light-gray, 15), darken($primary-light-gray, 15));
+    height: 100%;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.slider-selection {
+    @include linear-gradient(rgba($primary-green, 0.2), rgba($primary-green, 0.2));
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.slider-handle.round {
+    @include linear-gradient(saturate($primary-green, 10%), rgba($primary-green, 0.4));
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+
+.slider.slider-horizontal {
+    height: 6px;
+}
+
+.slider.slider-horizontal .slider-track {
+    height: 100%;
+    margin-top: 0;
+    top: auto;
+}
+
+.slider.slider-horizontal .slider-handle {
+    margin-top: -5px;
+}

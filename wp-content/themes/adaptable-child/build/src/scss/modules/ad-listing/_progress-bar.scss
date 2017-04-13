@@ -1,0 +1,28 @@
+.listing-form-progress {
+    padding      : 15px 0;
+    border-radius: 0;
+}
+
+.listing-form-progress {
+    .progress {
+        margin-top: 8px;
+    }
+}
+
+.progress {
+    height: 4px;
+    border-radius: 0;
+    background-color: lighten($primary-medium-gray, 40);
+    box-shadow: none;
+}
+
+    .progress-label {
+        font-size: 0.888888889em;
+        color: lighten($primary-medium-gray, 40);
+    }
+
+    .progress-bar {
+        border-radius: 0;
+        background-color: lighten($primary-green, 20);
+        box-shadow: none;
+    }

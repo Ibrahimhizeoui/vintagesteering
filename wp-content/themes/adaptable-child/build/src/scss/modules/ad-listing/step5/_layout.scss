@@ -1,0 +1,97 @@
+// hides the radio button to select a choice of plan, there's only one to make
+.stepSellingChoice {
+    display: none;
+}
+
+.planSelection {
+    width: auto;
+    display: block;
+    &[data-toggle="buttons"] > div > .btn input[type="radio"] {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        pointer-events: none;
+    }
+
+    label {
+        height: 200px;
+    }
+
+    &__option {
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    &__modal {
+        margin-top: 12px;
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+        display: block;
+        a {
+            color: $primary-medium-gray;
+        }
+    }
+}
+
+.listingPromoChoice {
+    height: 100%;
+    width         : 100%;
+    padding       : 30px 0;
+    text-transform: uppercase;
+    white-space: normal;
+
+    &.active {
+        border: 3px solid $primary-green;
+    }
+
+    &--highlight {
+        .listingPromoChoice__title {
+            color: $primary-gold;
+        }
+        .listingPromoChoice__price {
+            text-decoration: underline;
+        }
+    }
+
+    &__price {
+        margin-top: 10px;
+    }
+
+    &__features {
+        list-style: none;
+        margin-top: 10px;
+    }
+        &__feature {
+            color: lighten($primary-medium-gray, 30);
+            font-weight: 400;
+            font-size: 0.888888889em;
+            line-height: 1.5;
+        }
+
+}
+
+@include media($medium-screen-up) {
+    .listingPromoChoice {
+        padding       : 25px 0;
+    }
+    .planSelection {
+        &__option {
+            & + & {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@include media($medium-mid-screen-up) {
+    .planSelection {
+        label {
+            height: 270px;
+        }
+    }
+
+    .listingPromoChoice {
+        padding : 65px 0;
+    }
+}

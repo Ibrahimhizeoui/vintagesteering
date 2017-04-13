@@ -1,0 +1,244 @@
+#{$all-buttons}, .button, %button, .btn, .btn-default {
+    appearance: none;
+    background-color: $primary-gold;
+    border: 3px solid $primary-gold;
+    border-radius: 0;
+    color: $primary-white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $secondary-font-family;
+    font-size: $base-font-size;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    line-height: 1;
+    padding: ($base-spacing - 0.5) 7%;
+    text-decoration: none;
+    transition: background-color $base-duration $base-timing;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background: transparent;
+        border: 3px solid $primary-gold;
+        color: $primary-gold;
+        text-decoration: none;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        &:hover {
+            background-color: $action-color;
+        }
+    }
+}
+
+.button--small {
+    padding: ($base-spacing - 0.65) ($base-spacing - 0.3);
+}
+
+.button--central {
+    text-align: center;
+}
+
+.button--full {
+    width: 100%;
+}
+
+.button--bold {
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.button--long {
+    padding: $base-spacing $large-spacing;
+}
+
+.button--white {
+    background-color: $primary-white;
+    border: 2px solid $action-color;
+    color: $primary-black;
+    &:hover,
+    &:focus {
+        background-color: darken($primary-white, 5);
+        border: 2px solid $action-color;
+        color: $primary-black;
+        text-decoration: none;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        &:hover {
+            background-color: $action-color;
+        }
+    }
+}
+
+.button--black {
+    background-color: $primary-black;
+    border: 2px solid $primary-black;
+    color: $primary-white;
+    &:hover,
+    &:focus {
+        background-color: lighten($primary-black, 10);
+        border: 2px solid $primary-black;
+        color: $primary-white;
+        text-decoration: none;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        &:hover {
+            background-color: $action-color;
+        }
+    }
+}
+
+.button--passive {
+    background-color: $primary-white;
+    border: 1px solid lighten($action-color, 35);
+    color: lighten($action-color, 20);
+    &:hover,
+    &:focus {
+        background-color: $primary-white;
+        border: 1px solid lighten($action-color, 25);
+        color: lighten($action-color, 10);
+        text-decoration: none;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        &:hover {
+            background-color: $action-color;
+        }
+    }
+}
+
+.button--alternate,
+input[type="submit"].button--alternate,
+input[type="button"].button--alternate,
+%button--alternate,
+.btn-success {
+    background-color: $primary-green;
+    border: 3px solid $primary-green;
+
+    &:hover,
+    &:focus,
+    &:target {
+        border: 3px solid $primary-green;
+        color: $primary-green;
+        text-decoration: none;
+        background: transparent;
+    }
+    &:disabled {
+        &:hover {
+            background: transparent;
+        }
+    }
+}
+
+.btn-info {
+    background-color: $primary-black;
+    border: 3px solid $primary-black;
+    &:hover, &:focus {
+        border: 3px solid $primary-black;
+        color: $primary-black;
+        text-decoration: none;
+    }
+    &:disabled {
+        &:hover {
+            background: transparent;
+        }
+    }
+}
+
+.button--plan {
+    background-color: $primary-white;
+    border: 3px solid lighten($action-color, 40);
+    color: $primary-black;
+    transition: border 150ms ease;
+
+    &:hover, &:focus {
+        background-color: $primary-white;
+        border: 3px solid lighten($action-color, 30);
+        color: $primary-black;
+        text-decoration: none;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        &:hover {
+            background-color: $action-color;
+        }
+    }
+    &.active {
+        border-color: $primary-gold;
+    }
+}
+
+.button--search {
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    &:before {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f002";
+        text-indent: 0;
+        float: left;
+        width: 100%;
+    }
+}
+
+@include media($large-screen-up) {
+    .button--search {
+        text-indent: 0;
+        &:before {
+            content: "";
+        }
+    }
+}
+
+// ----------------------------------------
+// BOOTSTRAP OVERRIDES
+// ----------------------------------------
+.btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+    font-size: initial;
+}
+
+.btn-default {
+    border: $base-border;
+}
+
+
+.btn-group {
+    box-shadow: none;
+}
+
+.btn-default, .btn-default:focus, .btn-default:active, .btn-default:hover {
+    border-width: 2px;
+}
+
+.btn-group.bootstrap-select.open {
+    .dropdown-menu.open {
+        margin-top: 0;
+    }
+}
+
+.bootstrap-select.btn-group .btn {
+    padding-left : 1rem;
+    padding-right: 1rem;
+
+    .caret {
+        border-top-width  : 6px;
+        border-right-width: 6px;
+        border-left-width : 6px;
+        right: 25px;
+    }
+}

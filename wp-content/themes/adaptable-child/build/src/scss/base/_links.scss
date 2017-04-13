@@ -1,0 +1,47 @@
+.link {
+    color: $primary-medium-gray;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.2;
+
+    &--bold {
+        font-weight: 700;
+        font-family: $secondary-font-family;
+        text-transform: uppercase;
+    }
+
+    &--spaced {
+        margin: 1.5rem 0;
+    }
+
+    &--spaced-down {
+        margin-bottom: 1.5rem;
+    }
+
+    &--black {
+        color: $primary-black;
+    }
+
+    &--gold {
+        color: $primary-gold;
+        &:hover, &:focus {
+            color: saturate($primary-gold, 10);
+        }
+    }
+
+    &--red {
+        color: saturate($primary-red, 20);
+        &:hover, &:focus {
+            color: saturate($primary-red, 10);
+        }
+    }
+
+    &--green {
+        color: $primary-green;
+        &:hover, &:focus {
+            color: darken($primary-green, 5);
+        }
+    }
+}

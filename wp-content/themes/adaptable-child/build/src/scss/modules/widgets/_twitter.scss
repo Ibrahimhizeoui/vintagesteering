@@ -1,0 +1,13 @@
+.twitter-widget {
+    li:nth-child(odd) {
+        display: none;
+    }
+
+    ul {
+        margin         : 0;
+        list-style-type: none;
+        li {
+            margin: 7px 0;
+        }
+    }
+}

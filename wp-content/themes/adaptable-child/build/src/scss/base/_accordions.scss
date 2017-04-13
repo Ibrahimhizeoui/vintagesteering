@@ -1,0 +1,35 @@
+.accordion {
+    border       : 0;
+    margin-bottom: 30px;
+}
+
+//.accordion-group {}
+
+.accordion-group  {
+    margin-bottom: 0;
+    a {
+        color: $primary-medium-gray;
+        &.btn {
+            color: $primary-white;
+        }
+    }
+}
+
+//.accordion-heading {}
+// .accordion-toggle {}
+
+.accordion-heading .accordion-toggle {
+    border        : 0;
+    padding       : 13px 0;
+    font-size     : 0.777777778em;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color         : lighten($primary-medium-gray, 30);
+    font-family   : $secondary-font-family;
+}
+
+.panel {
+    background: none;
+    box-shadow: none;
+    border-bottom: none;
+}

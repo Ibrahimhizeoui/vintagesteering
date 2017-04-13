@@ -1,0 +1,26 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    text-align: center;
+
+    &--loading {
+        .please-wait {
+            top: 50%;
+            margin-top: -20px;
+        }
+    }
+
+    &--black-transparency {
+        background: $black--op70;
+    }
+
+    &--white-transparency {
+        background: $white--op70;
+    }
+}
+
+@import "please-wait";

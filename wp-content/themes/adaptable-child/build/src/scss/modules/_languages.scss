@@ -1,0 +1,85 @@
+.top-header {
+    &__dropdown {
+        &:first-of-type {
+            margin-left: 0.5em;
+        }
+    }
+}
+
+
+.languageSwitcher, .currencySwitcher {
+    margin-left: 1em;
+
+    > .languageSwitcher__list,
+    > .currencySwitcher__list {
+        &:hover {
+            .languageSwitcher__dropdown,
+            .currencySwitcher__dropdown {
+                display: block;
+            }
+        }
+    }
+
+    &__list {
+        list-style:none;
+    	position:relative;
+    	margin:0;
+
+        > .languageSwitcher__item,
+        > .currencySwitcher__item {
+            padding: 0 10px;
+
+            > span {
+                font-size: 0.833333333em;
+            }
+
+            span span {
+                cursor: default;
+                margin-right: 1em;
+            }
+
+            &:after {
+                content: "\25BC";
+                right: 0;
+                top: 1px;
+                color: white;
+                font-size: 0.5em;
+                position: absolute;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__dropdown {
+        box-sizing: content-box;
+        display: none;
+        list-style: none;
+        position: absolute;
+        margin: 0;
+        padding: 0 1em 1em 1em;
+        top: 38px;
+        left: -1em;
+        width: 100%;
+        z-index: 100;
+    }
+
+    &__item {
+        background-color: $primary-black;
+        color: $primary-white;
+        text-transform: uppercase;
+
+        a {
+            font-size: 0.833333333em;
+            display: block;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        &--sub {
+            width: 100%;
+            position:relative;
+            margin:0;
+            padding:0
+        }
+    }
+}

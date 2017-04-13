@@ -1,0 +1,95 @@
+.listing-form-content {
+  min-height: 600px;
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .price-suggestion .input-group {
+    margin-bottom: 0;
+  }
+}
+
+.listing-form-content {
+  .selected-price-plan {
+    label {
+      margin-bottom: 20px;
+      display      : block;
+    }
+
+    .plan-blocked {
+      background    : $primary-black;
+      padding       : 6px 15px;
+      text-transform: uppercase;
+      color         : $primary-white;
+      margin-right  : 12px;
+      border-radius : 4px;
+      box-shadow    : 0 1px 2px $black--op70;
+    }
+  }
+
+  .checkbox-inline {
+    font-weight  : 700;
+    padding-left : 0;
+    padding-right: 20px;
+  }
+
+  .popover {
+    max-width: 400px;
+  }
+}
+
+.adlisting__paypalConf {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.adlisting__paypal {
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 5px;
+    a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@include media($medium-screen-up) {
+    .adlisting__paypalConf {
+        text-align: left;
+        p {
+            float: right;
+        }
+    }
+
+    .adlisting__paypal {
+        float: left;
+        width: auto;
+        line-height: 33px;
+        a {
+            margin-right: 20px;
+        }
+    }
+}
+
+@import "../modules/ad-listing/layout";
+@import "../modules/ad-listing/forms";
+@import "../modules/ad-listing/messages";
+@import "../modules/ad-listing/progress-bar";
+@import "../modules/ad-listing/steps-column";
+
+// Step One
+@import "../modules/ad-listing/step1/form";
+
+// Step Two
+@import "../modules/ad-listing/step2/optional-features";
+
+// Step Three
+@import "../modules/ad-listing/step3/form";
+@import "../modules/ad-listing/step3/layout";
+
+// Step Four
+@import "../modules/ad-listing/step4/layout";
+
+// Step Five
+@import "../modules/ad-listing/step5/layout";

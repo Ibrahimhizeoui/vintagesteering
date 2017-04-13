@@ -1,0 +1,54 @@
+.vehicle-header {
+    margin: 35px auto;
+
+    &__top {
+        padding-bottom: 1rem;
+    }
+
+    &__bottom {
+
+    }
+
+    &__company-info {
+        text-align: left;
+        a {
+            vertical-align: middle;
+            color: $primary-black;
+            font-size: 0.722222222em; // 13
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__company-name {
+        color: $primary-medium-gray;
+        text-decoration: underline;
+    }
+
+    &__logo {
+        display: inline-block;
+        width:  50px;
+        height: 50px;
+        margin-left: 0.75rem;
+        position: relative;
+        img {
+            border: 1px solid $primary-light-gray;
+            border-radius: 50%;
+            display: inline;
+            overflow: hidden;
+        }
+    }
+
+    &__price {
+        h3 {
+            color: $primary-green;
+        }
+    }
+
+    @include media($medium-screen-up) {
+        &__company-info {
+            text-align: right;
+        }
+    }
+}

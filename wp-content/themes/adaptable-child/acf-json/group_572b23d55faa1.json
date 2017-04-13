@@ -1,0 +1,72 @@
+{
+    "key": "group_572b23d55faa1",
+    "title": "Billboard Defaults",
+    "fields": [
+        {
+            "key": "field_572b23e0ce472",
+            "label": "Billboard Default: Image",
+            "name": "b_billboard_option_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "0.8",
+            "mime_types": ".jpeg, .jpg"
+        },
+        {
+            "key": "field_572b37f382ac7",
+            "label": "Billboard Default: Video Poster Image",
+            "name": "b_billboard_option_postimage",
+            "type": "image",
+            "instructions": "If when uploading a video you don't have an image you can leave it blank and this default one will be used in its place.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "0.8",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-default-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1462450449
+}

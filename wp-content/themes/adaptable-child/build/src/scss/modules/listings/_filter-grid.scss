@@ -1,0 +1,59 @@
+/**
+ * Comments to make these partials clearer
+ * This file contains styles for the following aspects
+ * ---------------------------------------------------
+ * - Product Listing Grid
+ *     - list/gridview
+ *     - items per page
+ *     - sort by functionality
+ *     - favourites / saved searches / recently viewed
+ */
+
+.actions-bar {
+    margin-bottom: 1rem;
+}
+
+.search-actions {}
+
+.results-sorter {
+    .dropdown-toggle, .listing-sort-btn {
+        text-transform: uppercase;
+        border        : 1px solid lighten($primary-medium-gray, 30);
+        background    : $primary-white;
+        color         : $primary-medium-gray;
+        font-weight   : normal;
+        text-transform: none;
+        &:hover, &:focus {
+            border     : 1px solid lighten($primary-medium-gray, 30);
+            background : $primary-white;
+        }
+    }
+    .listing-sort-btn {
+        font-family: $base-font-family;
+        font-weight: 600;
+        padding: 0.65rem 2rem 0.65rem 0.4rem;
+        width: 75%;
+        float: left;
+        &:focus, &:target {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .dropdown-toggle {
+        padding: 0.65rem 0.35rem;
+        width: 25%;
+        float: left;
+        border-left:none;
+        &:hover, &:focus {
+            border-left: none;
+        }
+        .caret {
+            margin-left: 0;
+        }
+    }
+}
+
+.actions-bar {
+    width        : 100%;
+    z-index      : 998;
+}

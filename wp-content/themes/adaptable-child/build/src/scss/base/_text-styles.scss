@@ -1,0 +1,51 @@
+.align-left {
+  float : left;
+  margin: 0 25px 0 0 !important;
+}
+
+.align-right {
+  float : right;
+  margin: 0 0 0 25px !important;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.color-text {
+  color: $primary-white;
+}
+
+.through {
+  text-decoration: line-through;
+}
+
+.border-radius {
+  border-radius: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: $primary-medium-gray;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: $primary-medium-gray;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $primary-medium-gray;
+}
+
+:-ms-input-placeholder {
+  color: $primary-medium-gray;
+}

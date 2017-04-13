@@ -1,0 +1,323 @@
+{
+    "key": "group_572a339b13080",
+    "title": "Billboard",
+    "fields": [
+        {
+            "key": "field_572a33a0324d1",
+            "label": "Billboard Type",
+            "name": "b_billboard_type",
+            "type": "select",
+            "instructions": "Select what type of billboard you want to use at the top of the page\r\n<br \/>\r\n<strong>None<\/strong>: This is default for all billboards and simply shows the title of the page with an image you upload. unless on a single (magazine\/car listing)\r\n<br \/>\r\n<strong>Standard<\/strong>: Standard features text & a button on the left and the car search on the right.\r\n<br \/>\r\n<strong>Video<\/strong>: Video features text & a button on the left and Video on the right.\r\n",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "standard": "Standard",
+                "video": "Video"
+            },
+            "default_value": [
+                "none"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_572a3e711301d",
+            "label": "Billboard Image",
+            "name": "b_billboard_image",
+            "type": "image",
+            "instructions": "If you upload an image here it will overwrite the default one you have set in the \"global Options panel\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "0.8",
+            "mime_types": ".jpg, .jpeg"
+        },
+        {
+            "key": "field_572a34ba324d2",
+            "label": "Billboard Title",
+            "name": "b_billboard_title",
+            "type": "text",
+            "instructions": "Title of the billboard, a message for your users.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_572a3bdf324d4",
+            "label": "Billboard Button URL",
+            "name": "b_billboard_button_url",
+            "type": "page_link",
+            "instructions": "What page do you want to link to?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_572a33a0324d1",
+                        "operator": "==",
+                        "value": "standard"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_572a33a0324d1",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post",
+                "page",
+                "cars",
+                "user"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_572a3bf8324d5",
+            "label": "Billboard Button Text",
+            "name": "b_billboard_button_text",
+            "type": "text",
+            "instructions": "What do you want the button to say, try to keep it short and sweet.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_572a33a0324d1",
+                        "operator": "==",
+                        "value": "standard"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_572a33a0324d1",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_572b4c98610ad",
+            "label": "Billboard Button URL",
+            "name": "b_billboard_button_url_two",
+            "type": "page_link",
+            "instructions": "What page do you want to link to?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_572a33a0324d1",
+                        "operator": "==",
+                        "value": "standard"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_572a33a0324d1",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post",
+                "page",
+                "cars",
+                "user"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_572b4ca0610ae",
+            "label": "Billboard Button Text",
+            "name": "b_billboard_button_text_two",
+            "type": "text",
+            "instructions": "What do you want the button to say, try to keep it short and sweet.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_572a33a0324d1",
+                        "operator": "==",
+                        "value": "standard"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_572a33a0324d1",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_572a3c74324d6",
+            "label": "Billboard Video Poster Image",
+            "name": "b_billboard_video_postimage",
+            "type": "image",
+            "instructions": "This is the image that appears before a user clicks to play the video,  we suggest uploading something eye catching.\r\n<\/br>\r\nThe size displayed in the preview below is not the size front end, just merely a preview",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_572a33a0324d1",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "0.8",
+            "mime_types": ".jpeg, .jpg, .gif"
+        },
+        {
+            "key": "field_572a3d0d1301b",
+            "label": "Billboard Video URL",
+            "name": "b_billboard_videourl",
+            "type": "oembed",
+            "instructions": "Simple paste in the URL of your hosted video either from YouTube or Vimeo.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_572a33a0324d1",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "cars"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "user"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1462455466
+}

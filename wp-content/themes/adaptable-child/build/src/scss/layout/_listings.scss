@@ -1,0 +1,73 @@
+.listings-with-filter {
+    &.row {
+        margin-top: 0.5em;
+    }
+}
+
+.listing-header {
+    @extend %clearfix;
+    position      : relative;
+    margin-bottom: 1.5rem;
+}
+    .listing-header-title {
+        text-align: left;
+        h6 {
+            font-family: $base-font-family;
+            font-size: initial;
+            font-weight: 300;
+            letter-spacing: 2px;
+            display: inline-block;
+            color: lighten($primary-medium-gray, 30);
+            text-transform: uppercase;
+        }
+        &--central {
+            text-align: center;
+        }
+    }
+
+    .listing-header-link {
+        text-align: right;
+    }
+
+    .listing-container {
+        ul {
+            @include row();
+        }
+        .item {
+            list-style: none;
+        }
+    }
+
+.recent-vehicles {
+    .item {
+        margin-bottom: 2.5rem;
+    }
+
+    .action-icons {
+        margin-right: 1.222222222rem;
+    }
+}
+
+@include media($medium-screen-up) {
+    .listing-header-title {
+        text-align: left;
+        &--central {
+            text-align: center;
+        }
+    }
+    .listing-header-link {
+        text-align: right;
+    }
+}
+
+
+
+// grid & search filters
+@import "../modules/listings/filter-grid";
+@import "../modules/listings/filter-refine";
+@import "../modules/listings/filter-tags";
+
+// products
+@import "../modules/listings/vehicle";
+@import "../modules/listings/vehicle-results-in";
+@import "../modules/listings/news";

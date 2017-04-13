@@ -1,0 +1,104 @@
+{
+    "key": "group_57305674161b4",
+    "title": "Image Defaults",
+    "fields": [
+        {
+            "key": "field_5730a9fa68403",
+            "label": "Media",
+            "name": "",
+            "type": "tab",
+            "instructions": "t",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5730567ad34b4",
+            "label": "Video (iframe) Default",
+            "name": "id_video_iframe_default",
+            "type": "image",
+            "instructions": "This will be the default image used where video player iframes exist, (excluding the billboard) which is edited in (billboard_defaults);",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "large",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "0.4",
+            "mime_types": ".jpeg, .jpg, .gif, .png"
+        },
+        {
+            "key": "field_5730aa0c68404",
+            "label": "Listings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5730aa8268407",
+            "label": "Premium Badge Image (default)",
+            "name": "id_premium_badge_image_default",
+            "type": "image",
+            "instructions": "This will be the default image used for the premium badge in full.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "0.5",
+            "mime_types": ".jpeg, .jpg, .gif, .png"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-default-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1462808898
+}

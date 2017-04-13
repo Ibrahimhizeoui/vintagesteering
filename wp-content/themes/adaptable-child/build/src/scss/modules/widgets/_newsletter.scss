@@ -1,0 +1,18 @@
+// newsletter
+.widget {
+    &--newsletter {
+        text-align: center;
+        background-color: $primary-black;
+        padding: 2.5rem 4rem;
+        .widgettitle {
+            text-transform: uppercase;
+            margin-bottom: 2.5rem;
+            color: $primary-white;
+        }
+        form input {
+            text-align: center;
+            border-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

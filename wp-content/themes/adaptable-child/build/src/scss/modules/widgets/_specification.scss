@@ -1,0 +1,26 @@
+// specifications
+.specification-sidebar {
+    &__title {
+        font-weight: normal;
+        font-family: $base-font-family;
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.875rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        border-radius: 0;
+        li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        li:first-child {
+            border-radius: 0;
+        }
+        li:last-child {
+            border-radius: 0;
+        }
+    }
+}

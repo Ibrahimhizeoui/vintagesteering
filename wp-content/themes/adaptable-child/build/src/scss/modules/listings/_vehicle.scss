@@ -1,0 +1,64 @@
+.vehicle-meta { }
+
+.vehicle-block-content {
+    background-color: $primary-white;
+    border: 1px solid lighten($primary-medium-gray, 50);
+    padding: 1rem 1rem 0 1rem;
+    height: 125px;
+}
+
+.vehicle-block {
+    position: relative;
+
+    .vehicle-listing-image {
+        @include set-ratio(16, 11, img);
+        z-index: 100;
+        display: block;
+    }
+
+    .vehicleBadges {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 200;
+    }
+
+
+    .vehicle-title {
+        margin-bottom: 2px;
+        text-transform: uppercase;
+        a {
+            font-family: $heading-font-family;
+            color: $primary-black;
+            letter-spacing: 0;
+            font-size: 1rem;
+        }
+    }
+
+    .vehicle-cost {
+        font-family: $secondary-font-family;
+        color: $primary-green;
+        display   : block;
+        margin-top: 0.875rem;
+    }
+
+    .vehicle-meta {
+        color      : lighten($primary-medium-gray, 15);
+        line-height: normal;
+        display    : block;
+        font-weight: normal;
+        font-size: 0.777777778em;
+    }
+
+
+    .vehicle-body-type {
+        float     : right;
+        margin-top: 0.875rem;
+        opacity   : 0.8;
+        width     : 1.666666667em;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

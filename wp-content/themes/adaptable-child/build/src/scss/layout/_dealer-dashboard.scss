@@ -1,0 +1,122 @@
+/* Users Dashboard */
+.dashboard-wrapper {}
+
+// .dashboard-pages,
+// .dashboard-wrapper h2 {}
+
+.dashboard-block-head {
+    margin-bottom: 20px;
+    h3 {
+        margin-bottom: 0;
+    }
+    a {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.dashboard-block {
+    margin-top: 40px;
+    .tab-content {}
+
+    > .delete-saved, .compare-in-box, .delete-search, .delete-ads  {
+        width: 100%;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+}
+
+.dashboard-tables {
+    background: $primary-white;
+    min-width: 795px;
+
+    tbody {
+        font-size: 13px !important;
+    }
+
+    > tbody > tr > td {
+        vertical-align: middle;
+    }
+
+    > tbody > tr > td {
+        .label-success { background: $primary-green; }
+        .label-default, .label-primary { background: $primary-light-gray; }
+        .label-warning { background: $primary-blue; }
+        .label-info    { background: $primary-red; }
+
+        .delete-saved,
+        .deactivate-ad,
+        .delete-ads,
+        .text-default {
+            background: none;
+            color: lighten($primary-medium-gray, 30);
+            border: none;
+            padding-left: 5%;
+            padding-right: 5%;
+            &:hover {
+                background: none;
+                color: lighten($primary-medium-gray, 10);
+                border: none;
+            }
+        }
+    }
+
+    .search-name, h5 {
+        font-weight: 700;
+        white-space: normal;
+    }
+
+    .car-image {
+        display: block;
+    }
+
+    .search-find-results {
+        border: 0;
+        padding: 10px 0;
+        margin-bottom: 0;
+    }
+
+    .price {
+        font-weight: 700;
+    }
+}
+
+@include media($medium-screen-up) {
+    .dashboard-block {
+        margin-top: 64px;
+        > .delete-saved, .compare-in-box, .delete-search, .delete-ads {
+            width: auto;
+        }
+    }
+
+    .dashboard-block-head {
+        a {
+            width: auto;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .dashboard-tables {
+        .car-image {
+            display: none;
+        }
+
+        .search-find-results {
+            padding-left: 0;
+
+            ul.inline {
+                display: none;
+            }
+        }
+    }
+}
+
+@import '../modules/dashboard/user-sidebar';
+@import '../modules/dashboard/ads-section';
+@import '../modules/dashboard/saved-cars';
+@import '../modules/dashboard/saved-searches';
+@import '../modules/dashboard/plans-section';
+@import '../modules/dashboard/user-profile';

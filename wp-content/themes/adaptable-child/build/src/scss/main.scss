@@ -1,0 +1,74 @@
+/* Theme Name: Adaptable Child
+ * Theme URI: http://weareadaptable.com
+ * Description: Adaptable Child Theme
+ * Author: adaptable
+ * Author URI: http://weareadaptable.com
+ * Template: adaptable
+ * Text Domain: adaptable-child
+ * Domain Path: /languages
+ * Version: 0.1 */
+
+/* This imports the theme styles from the parent theme,
+ * instead of doing this the way the theme wants
+ * We do it here, avoiding another HTTP Request */
+
+@charset "utf-8";
+
+// base
+@import "bourbon";
+@import "base/grid-settings";
+@import "neat";
+@import "base/base";
+
+// theme styles
+@import "themestyles";
+
+// plugins
+@import "plugins/owl-carousel";
+@import "plugins/magnific";
+@import "plugins/flexslider";
+@import "plugins/nivoslider";
+@import "plugins/gravity-forms";
+
+// layout
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/listing-single";
+@import "layout/listings";
+@import "layout/listings-comparrison";
+@import "layout/blog";
+@import "layout/dealer";
+@import "layout/dealer-search";
+@import "layout/dealer-dashboard";
+@import "layout/ad-listing";
+@import "layout/flexible-field_page-content";
+@import "layout/user-signups";
+@import "layout/footer";
+
+// modules
+@import "modules/overlay";
+@import "modules/widgets";
+@import "modules/languages";
+@import "modules/play-icon";
+@import "modules/utility-bar";
+@import "modules/utility-bar-toolboxes";
+@import "modules/modal";
+@import "modules/billboard";
+@import "modules/search-form";
+@import "modules/social-icons";
+@import "modules/user";
+@import "modules/user-forms/user-registration";
+@import "modules/slider-track";
+@import "modules/user-generated";
+@import "modules/contact-form";
+@import "modules/mailchimp";
+@import "modules/standard-block";
+
+// pages
+@import "pages/home";
+
+// state
+@import "state/back-to-top";
+@import "state/margin-sets";
+@import "state/padding-sets";
+@import "state/padding-sets";

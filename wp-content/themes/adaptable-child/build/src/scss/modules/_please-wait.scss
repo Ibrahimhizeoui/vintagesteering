@@ -1,0 +1,65 @@
+.please-wait {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    position: relative;
+
+    &__textualIndicator {
+        position: absolute;
+        bottom: -30px;
+        color: $primary-white;
+        width: 120px;
+        margin-bottom: 0;
+        left: -30px;
+        font-size: 14px;
+        width: 120px;
+    }
+
+    &__circle {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &:before {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            width: 20%;
+            height: 8%;
+            background-color: $primary-white;
+            border-radius: 20%;
+            animation: circleFadeDelay 1.2s infinite ease-in-out both;
+        }
+
+        &:nth-of-type(2)  { transform: rotate(30deg);  }
+        &:nth-of-type(3)  { transform: rotate(60deg);  }
+        &:nth-of-type(4)  { transform: rotate(90deg);  }
+        &:nth-of-type(5)  { transform: rotate(120deg); }
+        &:nth-of-type(6)  { transform: rotate(150deg); }
+        &:nth-of-type(7)  { transform: rotate(180deg); }
+        &:nth-of-type(8)  { transform: rotate(210deg); }
+        &:nth-of-type(9)  { transform: rotate(240deg); }
+        &:nth-of-type(10) { transform: rotate(270deg); }
+        &:nth-of-type(11) { transform: rotate(300deg); }
+        &:nth-of-type(12) { transform: rotate(330deg); }
+
+        &:nth-of-type(2):before  { animation-delay: -1.1s; }
+        &:nth-of-type(3):before  { animation-delay: -1s;   }
+        &:nth-of-type(4):before  { animation-delay: -0.9s; }
+        &:nth-of-type(5):before  { animation-delay: -0.8s; }
+        &:nth-of-type(6):before  { animation-delay: -0.7s; }
+        &:nth-of-type(7):before  { animation-delay: -0.6s; }
+        &:nth-of-type(8):before  { animation-delay: -0.5s; }
+        &:nth-of-type(9):before  { animation-delay: -0.4s; }
+        &:nth-of-type(10):before { animation-delay: -0.3s; }
+        &:nth-of-type(11):before { animation-delay: -0.2s; }
+        &:nth-of-type(12):before { animation-delay: -0.1s; }
+    }
+}
+
+@keyframes circleFadeDelay {
+  0%, 39%, 100% { opacity: 0; }
+  40% { opacity: 1; }
+}

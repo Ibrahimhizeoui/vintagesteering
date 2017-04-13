@@ -1,0 +1,14 @@
+.relatedListings {
+    background-color: $primary-cream;
+
+    .listing-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .recent-vehicles {
+        margin: 2.5em auto;
+        .item {
+            margin-top: 0;
+        }
+    }
+}

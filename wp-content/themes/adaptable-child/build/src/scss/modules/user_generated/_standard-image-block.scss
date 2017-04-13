@@ -1,0 +1,3 @@
+.standardImageBlock {
+    @include set-ratio(16, 9, img);
+}

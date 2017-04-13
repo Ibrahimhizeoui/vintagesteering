@@ -1,0 +1,15 @@
+.widget_imic_mortgage {
+    form {
+        border: 1px solid $primary-light-gray;
+    }
+
+    #message {
+        margin: 0;
+        .alert {
+            padding   : 0;
+            border    : 0;
+            background: none;
+            margin    : 0 0 10px;
+        }
+    }
+}

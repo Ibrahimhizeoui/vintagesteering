@@ -1,0 +1,84 @@
+.listing-form-content {
+    .bootstrap-select.btn-group:not(.input-group-btn),
+    .bootstrap-select.btn-group[class*="span"] {
+        margin-bottom: 0.375em;
+    }
+}
+
+
+.listing-form-steps-wrapper {}
+
+.listing-form-steps {
+    margin         : 0 0 30px;
+    list-style-type: none;
+    padding        : 0 4% 0 2.5%;
+
+    li {
+        padding   : 12px 5%;
+        border-top: 1px solid $primary-light-gray;
+
+        a {
+            color: lighten($primary-medium-gray, 40);
+            display: block;
+            cursor: default;
+            &:hover, &:focus {
+                color: lighten($primary-medium-gray, 40);
+                text-decoration: none;
+            }
+        }
+
+        .step-title {
+            font-family: $secondary-font-family;
+            letter-spacing: 1px;
+            font-size: 0.888888889em;
+        }
+
+        .step-state {
+            float                  : right;
+            font-size              : 0.888888889em;
+            font-family            : $font-awesome;
+            font-style             : normal;
+            font-weight            : normal;
+        }
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        &.pending .step-state:before {
+            content: "\f10c";
+        }
+
+        &.active a, &.completed a{
+            color: $primary-black;
+            text-decoration: none;
+            &:hover {
+                color: $primary-black;
+            }
+        }
+
+        &.active .step-state:before {
+            content: "\f10c";
+        }
+
+        &.completed {
+            .step-state:before {
+                content: "\f05d";
+            }
+
+            &:hover a .step-state,
+            a .step-state {
+                color: $primary-green;
+            }
+        }
+    }
+
+    #message {
+        .alert {
+            background: none;
+            border: none;
+            font-size: 16px;
+            color: black;
+        }
+    }
+}

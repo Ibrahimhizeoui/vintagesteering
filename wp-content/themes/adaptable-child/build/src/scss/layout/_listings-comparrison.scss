@@ -1,0 +1,198 @@
+.comparision-table {
+    .price {
+        font-size : 18px;
+        display   : block;
+        margin-top: 7px;
+    }
+
+    .thead-sticky {
+        border-bottom: 0;
+        width: 100%;
+        strong {
+            display: block;
+            padding: 0 40px;
+        }
+    }
+
+    .is-sticky .thead-sticky {
+        background   : $primary-white;
+        padding      : 10px 0;
+        border-bottom: 1px solid $primary-light-gray;
+    }
+}
+
+.comp-image {
+    margin-top: 10px;
+
+    .comp-table-col {
+        &:first-child {
+            display: none;
+        }
+    }
+
+    .img-thumbnail {
+        display  : inline-block;
+        background: none;
+        border: none;
+        position: relative;
+        width: 250px;
+        height: 180px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+}
+
+.comp-table-row {
+    @include cf;
+    border-bottom: 1px solid $primary-light-gray;
+    .comp-table-col:first-child {
+        font-weight: 700;
+        text-align : left;
+    }
+}
+
+.comp-feature-head {
+    background : $primary-light-gray;
+    font-weight: 700;
+}
+
+.comp-table-col {
+    float     : left;
+    display   : block;
+    padding   : 5px 0;
+    text-align: center;
+
+    .add-features-list {
+        margin: 20px 0;
+        li {
+            margin: 5px 0;
+        }
+    }
+}
+
+.comp-table-permalinks {
+    border-bottom: 0;
+    padding-top  : 15px;
+}
+
+.comparision-table {
+    width: 100%;
+    &.col1 .comp-table-col,
+    &.col2 .comp-table-col {
+        width: 40%;
+    }
+
+    &.col3 .comp-table-col {
+        width: 40%;
+    }
+
+    &.col1 .comp-table-row .comp-table-col:first-child,
+    &.col2 .comp-table-row .comp-table-col:first-child,
+    &.col4 .comp-table-col {
+        width: 20%;
+    }
+
+    &.col3 .comp-table-row .comp-table-col:first-child {
+        width: 19%;
+    }
+
+    &.col4 .comp-table-row .comp-table-col:first-child {
+        width: 20%;
+    }
+
+    .comp-feature-head .comp-table-col {
+        width      : 100% !important;
+        font-weight: 400;
+        text-align : left;
+        padding    : 8px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .comparision-table-resp {
+        min-height        : 0.01%;
+        overflow-x        : auto;
+        overflow-y        : hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        width             : 100%;
+    }
+
+    .comparision-table {
+        display: table !important;
+
+        .comp-table-row {
+
+            .comp-table-col {
+                white-space: nowrap;
+                float      : none;
+                text-align : left !important;
+                display    : table-cell;
+            }
+
+            &.comp-table-features .comp-table-col {
+                    white-space: normal;
+                    display    : table-cell;
+            }
+            &.comp-image .comp-table-col {
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+
+        .thead-sticky.comp-table-row .comp-table-col {
+            white-space: normal;
+        }
+    }
+}
+
+@include media($medium-mid-screen-up) {
+    .comparision-table {
+        &.col1 .comp-table-col,
+        &.col2 .comp-table-col {
+            width: 40%;
+        }
+
+        &.col3 .comp-table-col {
+            width: 35%;
+        }
+
+        &.col1 .comp-table-row .comp-table-col:first-child,
+        &.col2 .comp-table-row .comp-table-col:first-child,
+        &.col4 .comp-table-col {
+            width: 20%;
+        }
+
+        &.col3 .comp-table-row .comp-table-col:first-child {
+            width: 19%;
+        }
+
+        &.col4 .comp-table-row .comp-table-col:first-child {
+            width: 20%;
+        }
+
+        .comp-feature-head .comp-table-col {
+            width      : 100% !important;
+            font-weight: 400;
+            text-align : left;
+            padding    : 8px 0;
+        }
+    }
+
+    .comparision-table {
+        .comp-table-row {
+            &.comp-image .comp-table-col {
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+}

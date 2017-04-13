@@ -1,0 +1,160 @@
+// global widget stuff
+
+.widget {
+    ol, ul {
+        margin         : 0;
+        list-style-type: none;
+    }
+
+    select {
+        max-width: 100%;
+    }
+
+    .widgettitle {
+        text-transform: uppercase;
+        letter-spacing: 0;
+    }
+
+    .sidebar-widget {
+        margin-bottom: 35px;
+        .widgettitle {
+            padding-bottom: 10px;
+            border-bottom : 1px solid $primary-light-gray;
+            position      : relative;
+            &:after {
+                position  : absolute;
+                left      : 0;
+                bottom    : 2px;
+                height    : 2px;
+                width     : 80px;
+                background: $primary-black;
+            }
+        }
+
+        .listing-container {
+            padding-top: 20px;
+        }
+    }
+
+}
+
+.widget_archive,
+.widget_categories,
+.widget_links,
+.widget_meta,
+.widget_recent_comments,
+.widget_recent_entries {
+    @include cf;
+
+    > ul {
+        margin-top: 1.5rem;
+    }
+
+    ul {
+        li {
+            @include cf;
+            text-align: right;
+            a {
+                font-size : 14px;
+                color     : $primary-medium-gray;
+                float: left;
+                display : inline-block;
+                position: relative;
+            }
+            ul.children,
+            ul.sub-menu {
+                border-top: 1px solid $primary-light-gray;
+                padding   : 7px 0 0 20px;
+                margin-top: 7px;
+                li {
+                    &:last-child {
+                        padding-bottom: 0;
+                        border-bottom : 0;
+                        margin-bottom : 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar-widget {
+    & + .sidebar-widget {
+        margin-top: 70px;
+    }
+}
+
+.body-type-widget {
+    li {
+        width: 33.33%;
+        float: left;
+        span {
+            display    : block;
+            font-size  : 12px;
+            font-family: $secondary-font-family;
+            margin-top : 4px;
+            font-style : italic;
+        }
+        img {
+            width: 70%;
+        }
+    }
+}
+
+.make-widget {
+    li {
+        width        : 25%;
+        float        : left;
+        min-height   : 55px;
+        margin-bottom: 10px;
+
+        img {
+            max-width: 60%;
+        }
+    }
+}
+
+.widget_selected_post {
+    .post-image {
+        width       : 30%;
+        float       : left;
+        margin-right: 5%;
+    }
+
+    .widget-blog-content {
+        float: left;
+        width: 65%;
+    }
+
+    .fa-angle-right {
+        display: none;
+    }
+
+    .fa-plus {
+        margin-right: 0;
+    }
+
+    ul li {
+        a {
+            padding        : 12px 0;
+            text-decoration: none;
+        }
+
+        &:first-child a {
+            padding-top: 8px;
+        }
+    }
+}
+
+
+@import "widgets/newsletter";
+@import "widgets/specification";
+@import "widgets/recent-posts";
+@import "widgets/recent-comments";
+@import "widgets/mortgage";
+@import "widgets/categories";
+@import "widgets/reviews";
+@import "widgets/tag-cloud";
+@import "widgets/twitter";
+@import "widgets/calendar";
+@import "widgets/custom";

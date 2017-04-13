@@ -1,0 +1,10 @@
+.stepContent {
+    &__header {
+
+    }
+    &__section {
+        & + & {
+            margin-top: 60px;
+        }
+    }
+}
